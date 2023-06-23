@@ -12,7 +12,7 @@ $text_margin = 15;    //ラベルの余白
 $size        = 300;   //サイズ（正方形）
 
 //フォント
-$font = "migmix-1p-regular.ttf";
+$font = __DIR__ . "/migmix-1p-regular.ttf";
 $font_size = 10;
 
 //画像
