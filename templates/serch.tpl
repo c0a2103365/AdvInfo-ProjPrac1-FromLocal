@@ -6,8 +6,8 @@
 
 <body>
     <form action="serch.php" method="get">
-        <input style="width: 400px; padding: 1em 0.5em; line-height: 1;" margin: 0.5em 0; type="text" name="serch_key" value="{$serch_key}" placeholder="キーワードで検索" required>
-        <input style="padding: 1em 0.5em; line-height: 10;" margin: 0.5em 0; type="submit" name="submit" value="検索">
+        <input style="font-size: 20px; width: 400px; padding: 1em 0.5em; line-height: 1; margin: 0.5em 0;" type="text" name="serch_key" value="{$serch_key}" placeholder="キーワードで検索" required>
+        <input style="padding: 1.5em 2em; line-height: 10; margin: 0.5em 1em;" type="submit" name="submit" value="検索">
     </form>
     <p style="font-size: 200%;">{$result_text}</p>
     {if $result}
