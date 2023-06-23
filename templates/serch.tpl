@@ -43,7 +43,7 @@
     {else}
     	<br>
     	<br>
-    	{$fail_text}
+    	<p style="font-size: 200%;">{$fail_text}</p>
     {/if}
 </body>
 
