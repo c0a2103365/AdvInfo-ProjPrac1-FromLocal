@@ -1,7 +1,7 @@
 <html> 
 <body>
 
-<form action="ranking.php" method="GET">
+<form action="../ranking/ranking.php" method="GET">
 </form>
 
 </body>

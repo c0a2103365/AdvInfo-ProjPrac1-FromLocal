@@ -1,19 +1,19 @@
 <html> 
 <body>
-<h1>重さランキング</h1>
-<form action="../ranking/weight_r.php" method="get">
+<h1>価格ランキング</h1>
+<form action="../ranking/price_r.php" method="get">
 {if $result}
     <table border="1">
         <tr>
             <th>PC_id</th>
             <th>name</th>
-            <th>weight</th>
+            <th>price</th>
         </tr>
         {foreach $result as $loop}
         <tr>
             <td>{$loop["PC_id"]}</td>
             <td>{$loop["name"]}</td>
-            <td>{number_format($loop["weight"],2)}<i>kg</i></td>
+            <td>{number_format($loop["price"])}<i>円</i></td>
         </tr>
         {/foreach}
     </table>
