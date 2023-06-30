@@ -1,6 +1,6 @@
 <html>        
 <body>
-<h1>イラストページ</h1>
+<h2>イラストページ</h1>
 <?php
 require("libDB.php");
 
@@ -17,7 +17,7 @@ $pnw = new pnwsmarty();
 $smarty = $pnw->getTpl();
 $smarty->assign("result",$result);
 
-$smarty->display("../templates/game.tpl");
+$smarty->display("../templates/irast.tpl");
 
 
     
