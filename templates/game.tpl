@@ -1,7 +1,7 @@
 <html> 
 <body>
 <link rel="stylesheet"  href="../css/style.css">
-<h1>イラストページ</h1>
+<h1>ゲームしたいひと向けPC</h1>
 <form action="weight_r.php" method="GET">
 {if $result}
     <table border="1">
@@ -24,7 +24,6 @@
             <td>{$loop["memory"]}</td>
             <td>{$loop["storage"]}</td>
             <td>{$loop["price"]}</td>
-            
         </tr>
         {/foreach}
     </table>

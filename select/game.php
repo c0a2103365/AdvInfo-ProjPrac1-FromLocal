@@ -16,7 +16,7 @@ $pnw = new pnwsmarty();
 $smarty = $pnw->getTpl();
 $smarty->assign("result",$result);
 
-$smarty->display("../templates/irast.tpl");
+$smarty->display("../templates/game.tpl");
 
 
     
