@@ -3,6 +3,7 @@
         <tr>
             <th>PC_id</th>
             <th>name</th>
+            <th>inch</th>
             <th>office_app</th>
         </tr>
         {foreach $result as $loop}
@@ -10,6 +11,7 @@
             <tr>
                 <td>{$loop["PC_id"]}</td>
                 <td>{$loop["name"]}</td>
+                <td>{$loop["inch"]}</td>
                 <td>{$loop["office_app"]}</td>
             </tr>
         {/if}
