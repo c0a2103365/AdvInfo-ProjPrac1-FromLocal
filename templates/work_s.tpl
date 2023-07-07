@@ -1,7 +1,4 @@
-<html> 
-<body>
-<h1>仕事をする人におすすめ</h1>
-<form action="../select/mobile_s.php" method="get">{if $result}
+{if $result}
     <table border="1">
         <tr>
             <th>PC_id</th>
