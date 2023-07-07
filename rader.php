@@ -25,6 +25,11 @@ function dev_val($num,$ave,$std_dev){
     return (($num-$ave)/$std_dev)*50+10;
 }
 
+// 偏差値の逆数を算出する関数(重さと価格に適用)
+function reverse_val($value){
+    return 100-$value;
+}
+
 
 function radercart($score_1, $score_2, $score_3, $score_4, $score_5){
     //値
