@@ -22,7 +22,7 @@ function std_dev($num){
 
 // 偏差値を算出する関数
 function dev_val($num,$ave,$std_dev){
-    return (($num-$ave)/$std_dev)*50+10;
+    return (($num-$ave)/$std_dev)*10+50;
 }
 
 // 偏差値の逆数を算出する関数(重さと価格に適用)

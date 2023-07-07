@@ -13,10 +13,10 @@ $smarty = $pnw->getTpl();
 $smarty->assign("result",$result);
 $smarty->display("../templates/illust_s.tpl");
 
-foreach ($result as $row) {
-    $result_str = implode(", ", $row); // 各行の要素をカンマ区切りの文字列に変換
-    echo $result_str . "<br>"; // 変換された文字列を出力し、改行する
-}
+// foreach ($result as $row) {
+//     $result_str = implode(", ", $row); // 各行の要素をカンマ区切りの文字列に変換
+//     echo $result_str . "<br>"; // 変換された文字列を出力し、改行する
+// }
 echo "-------<br>";
 
 // 各配列の定義
@@ -43,5 +43,23 @@ echo "メモリの例です:".$memory_array[1] . "<br>";
 echo "重さの例です:" . $weight_array[1] . "<br>";
 echo "不揮発性容量の例です:" . $storage_array[1] . "<br>";
 
+$price_dev_val_array= [];
+$battery_dev_val_array = [];
+$memory_dev_val_array = [];
+$weight_dev_val_array = [];
+$storage_dev_val_array = [];
+
+for($i=0;$i<8;$i++){
+    
+    array_push($price_dev_val_array, reverse_val(dev_val($price_array[$i], average($price_array), std_dev(dispersion($price_array)))));
+    
+}
+
+// radercart(50,60,70,40,50);
+// echo $price_dev_val_array[7];
+foreach ($price_dev_val_array as $row) {
+    $result_str = implode(", ", array_map('intval', (array)$row)); // 各行の要素をカンマ区切りの文字列に変換
+    echo $result_str . "<br>"; // 変換された文字列を出力し、改行する
+}
 
 ?>
