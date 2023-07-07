@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-06-30 09:12:46
+/* Smarty version 3.1.39, created on 2023-07-07 07:37:40
   from 'C:\xampp\htdocs\pnw\2023g01\templates\illust_s.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_649e806e224832_70492957',
+  'unifunc' => 'content_64a7a4a4a091d7_20596191',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '375bf739f183c3db75b3e03212a6f069793a69e4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\illust_s.tpl',
-      1 => 1688109161,
+      1 => 1688114254,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_649e806e224832_70492957 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64a7a4a4a091d7_20596191 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html> 
 <body>
 <h1>イラスト楽しみたい人向け</h1>
@@ -44,7 +44,7 @@ $_smarty_tpl->tpl_vars['loop']->do_else = false;
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["name"];?>
 </td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["dpi_L"];?>
-<i>x</i><?php echo $_smarty_tpl->tpl_vars['loop']->value["dpi_L"];?>
+<i>x</i><?php echo $_smarty_tpl->tpl_vars['loop']->value["dpi_R"];?>
 </td>
         </tr>
         <?php
