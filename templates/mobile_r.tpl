@@ -23,7 +23,7 @@
             <td>{$loop["battery"]}</td>
             <td>{$loop["memory"]}</td>
             <td>{$loop["price"]}</td>
-            <td>{$loop["cpu"]}</td>
+            <td><i>{$loop["cpu"]}</i></td>
 
         </tr>
         {/foreach}
