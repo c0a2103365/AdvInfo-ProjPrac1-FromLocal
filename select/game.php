@@ -17,6 +17,9 @@ $smarty = $pnw->getTpl();
 $smarty->assign("result",$result);
 
 $smarty->display("../templates/game.tpl");
+print_r($result[1]);
+
+
 
 
     

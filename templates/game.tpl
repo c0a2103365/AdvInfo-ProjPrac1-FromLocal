@@ -17,13 +17,13 @@
         </tr>
         {foreach $result as $loop }
         <tr>
-            <td>{$loop["PC_id"]}</td>
+            <td>{$loop["PC_id"]}</td></td>
             <td>{$loop["name"]}</td>
-            <td>{$loop["weight"]}</td>
+            <td>{$loop["weight"]}<i>kg</i></td></td>
             <td>{$loop["battery"]}</td>
             <td>{$loop["memory"]}</td>
             <td>{$loop["storage"]}</td>
-            <td>{$loop["price"]}</td>
+            <td>{$loop["price"]}<i>円 </i></td></td>
         </tr>
         {/foreach}
     </table>

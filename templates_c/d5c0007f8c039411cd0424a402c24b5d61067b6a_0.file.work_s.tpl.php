@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-07 07:29:22
+/* Smarty version 3.1.39, created on 2023-07-07 06:38:16
   from 'C:\xampp\htdocs\pnw\2023g01\templates\work_s.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64a7a2b235bc32_96456375',
+  'unifunc' => 'content_64a796b88e64c5_69609701',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd5c0007f8c039411cd0424a402c24b5d61067b6a' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\work_s.tpl',
-      1 => 1688706769,
+      1 => 1688113912,
       2 => 'file',
     ),
   ),
@@ -20,11 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64a7a2b235bc32_96456375 (Smarty_Internal_Template $_smarty_tpl) {
-?><html> 
-<body>
-<h1>仕事をする人におすすめ</h1>
-<form action="../select/mobile_s.php" method="get"><?php if ($_smarty_tpl->tpl_vars['result']->value) {?>
+function content_64a796b88e64c5_69609701 (Smarty_Internal_Template $_smarty_tpl) {
+if ($_smarty_tpl->tpl_vars['result']->value) {?>
     <table border="1">
         <tr>
             <th>PC_id</th>
