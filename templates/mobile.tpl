@@ -1,4 +1,5 @@
-<html> 
+<html>
+<link rel="icon" href="../images/favicon.ico"> 
 <body>
 <link rel="stylesheet"  href="../css/style.css">
 <h1>携帯性重視する方向け</h1>
