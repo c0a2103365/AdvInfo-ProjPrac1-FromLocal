@@ -8,10 +8,10 @@
             <th>PC_id</th>
             <th>name</th>
             <th>storage</th>
-            <th>weight</th>
             <th>battery</th>
-            <th>memory</th>
             <th>price</th>
+            <th>memory</th>
+            <th>weight</th>
             <th>cpu</th>
         </tr>
         {foreach $result as $loop}

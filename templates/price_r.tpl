@@ -8,9 +8,9 @@
             <th>PC_id</th>
             <th>name</th>
             <th>price</th>
-            <th>weight</th>
             <th>battery</th>
             <th>memory</th>
+            <th>weight</th>
             <th>storage</th>
             <th>cpu</th>
             

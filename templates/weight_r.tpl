@@ -9,9 +9,9 @@
             <th>name</th>
             <th>weight</th>
             <th>battery</th>
+            <th>price</th>
             <th>memory</th>
             <th>storage</th>
-            <th>price</th>
             <th>cpu</th>
         </tr>
         {foreach $result as $loop}
