@@ -7,7 +7,6 @@
         <tr>
             <th>PC_id</th>
             <th>name</th>
-            <th>mobile</th>
             <th>weight</th>
             <th>battery</th>
             <th>memory</th>
@@ -24,7 +23,7 @@
             <td>{$loop["memory"]}</td>
             <td>{$loop["storage"]}</td>
             <td>{$loop["price"]}<i>円 </i></td></td>
-            <td>{$loop["storage"]}</td>
+            <td>{$loop["cpu"]}</td>
             
         </tr>
         {/foreach}

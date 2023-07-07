@@ -37,8 +37,8 @@ function radercart($score_1, $score_2, $score_3, $score_4, $score_5){
     //ラベル
     $labels = array("価格", "重さ", "稼働時間", "メモリ", "ストレージ");
 
-    $max         = 10;    //上限
-    $step        = 2;     //目盛の間隔
+    $max         = 75;    //上限
+    $step        = 10;     //目盛の間隔
     $margin      = 80;    //グラフの余白
     $text_margin = 15;    //ラベルの余白
     $size        = 300;   //サイズ（正方形）
@@ -93,10 +93,7 @@ function radercart($score_1, $score_2, $score_3, $score_4, $score_5){
         imagettftext($image, $font_size, 0, $text_x, $text_y, $font_color, $font, $labels[$i]);
     }
 
-    for ($i = 0;
-        $i <= $max;
-        $i = $i + $step
-    ) {
+    for ($i = 0;$i <= $max;$i = $i + $step){
         $box = imagettfbbox($font_size, 0, $font, $i);
         $text_width = $box[2] - $box[6];
         $text_height = $box[3] - $box[7];
@@ -130,6 +127,6 @@ function point_rotate($length, $angle){
 }
 
 
-radercart(6, 7, 8, 10, 9);
+radercart(60, 50, 40, 30, 55);
 
 ?>

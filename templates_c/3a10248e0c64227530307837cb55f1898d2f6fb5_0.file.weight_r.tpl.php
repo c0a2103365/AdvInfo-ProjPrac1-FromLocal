@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-07 07:44:13
+/* Smarty version 3.1.39, created on 2023-07-07 08:33:50
   from 'C:\xampp\htdocs\pnw\2023g01\templates\weight_r.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64a7a62dd05793_14202210',
+  'unifunc' => 'content_64a7b1ce45a0a8_58923626',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3a10248e0c64227530307837cb55f1898d2f6fb5' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\weight_r.tpl',
-      1 => 1688708383,
+      1 => 1688708795,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64a7a62dd05793_14202210 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64a7b1ce45a0a8_58923626 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html> 
 <body>
 <h1>重さランキング</h1>
@@ -58,8 +58,8 @@ $_smarty_tpl->tpl_vars['loop']->do_else = false;
 </td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["price"];?>
 </td>
-            <td><i><?php echo $_smarty_tpl->tpl_vars['loop']->value["cpu"];?>
-</i></td>
+            <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["cpu"];?>
+</td>
 
         </tr>
         <?php

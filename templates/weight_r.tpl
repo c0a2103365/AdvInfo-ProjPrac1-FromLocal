@@ -9,21 +9,22 @@
             <th>name</th>
             <th>weight</th>
             <th>battery</th>
+            <th>price</th>
             <th>memory</th>
             <th>storage</th>
-            <th>price</th>
             <th>cpu</th>
         </tr>
         {foreach $result as $loop}
         <tr>
             <td>{$loop["PC_id"]}</td>
             <td>{$loop["name"]}</td>
-            <td>{number_format($loop["weight"],2)}<i>kg</i></td>
-            <td>{$loop["battery"]}</td>
+            <td>{number_format($loop["weight"], 2)}<i>kg</i></td> 
+            <td>{number_format($loop["battery"],1)}<i>h</i></td>
+            <td>{number_format($loop["price"])}<i>円</i></td>
             <td>{$loop["memory"]}</td>
-            <td>{$loop["storage"]}</td>
-            <td>{$loop["price"]}</td>
+            <td>{number_format($loop["storage"])}<i>GB</i></td>
             <td>{$loop["cpu"]}</td>
+            
 
         </tr>
         {/foreach}
