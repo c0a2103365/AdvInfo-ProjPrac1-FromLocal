@@ -1,4 +1,36 @@
 <?php
+// 平均を算出する関数
+function average($arr){
+    return array_sum($arr)/count($arr);
+}
+// 分散を算出する関数
+function dispersion($arr){
+    // 平均値を求める
+    $ave= average($arr);
+    $variance = 0.0;
+    // 配列を参照
+    foreach ($arr as $value) {
+        $variance += pow($value - $ave, 2);
+    }
+    return (float) ($variance / count($arr));
+}
+
+// 標準偏差を算出する関数
+function std_dev($num){
+    return sqrt($num);
+}
+
+// 偏差値を算出する関数
+function dev_val($num,$ave,$std_dev){
+    return (($num-$ave)/$std_dev)*50+10;
+}
+
+// 偏差値の逆数を算出する関数(重さと価格に適用)
+function reverse_val($value){
+    return 100-$value;
+}
+
+
 function radercart($score_1, $score_2, $score_3, $score_4, $score_5){
     //値
     $values = array($score_1,$score_2,$score_3,$score_4,$score_5);
