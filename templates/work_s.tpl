@@ -8,11 +8,11 @@
             <th>name</th>
             <th>inch</th>
             <th>office_app</th>
-            <th>weight</th>
             <th>battery</th>
-            <th>memory</th>
-            <th>storage</th>
             <th>price</th>
+            <th>memory</th>
+            <th>weight</th>
+            <th>storage</th>
             <th>cpu</th>
         </tr>
         {foreach $result as $loop}
