@@ -8,11 +8,11 @@
             <th>PC_id</th>
             <th>name</th>
             <th>dpi</th>
-            <th>weight</th>
+            <th>price</th>
             <th>battery</th>
             <th>memory</th>
+            <th>weight</th>
             <th>storage</th>
-            <th>price</th>
             <th>cpu</th>
 
         </tr>
