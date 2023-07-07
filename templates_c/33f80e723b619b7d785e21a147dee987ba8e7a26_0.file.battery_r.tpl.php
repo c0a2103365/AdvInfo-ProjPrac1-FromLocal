@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-07 07:34:02
+/* Smarty version 3.1.39, created on 2023-07-07 08:47:12
   from 'C:\xampp\htdocs\pnw\2023g01\templates\battery_r.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64a7a3cab52197_75245776',
+  'unifunc' => 'content_64a7b4f01129d7_54127841',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '33f80e723b619b7d785e21a147dee987ba8e7a26' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\battery_r.tpl',
-      1 => 1688708034,
+      1 => 1688712420,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64a7a3cab52197_75245776 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64a7b4f01129d7_54127841 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html> 
 <body>
 <h1>稼働時間ランキング</h1>
@@ -52,16 +52,17 @@ $_smarty_tpl->tpl_vars['loop']->do_else = false;
 </td>
             <td><?php echo number_format($_smarty_tpl->tpl_vars['loop']->value["battery"],1);?>
 <i>h</i></td>
-            <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["weight"];?>
-</td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["memory"];?>
 </td>
-            <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["storage"];?>
+            <td><?php echo number_format($_smarty_tpl->tpl_vars['loop']->value["weight"],2);?>
+<i>kg</i></td>            <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["memory"];?>
 </td>
+            <td><?php echo number_format($_smarty_tpl->tpl_vars['loop']->value["storage"]);?>
+<i>GB</i></td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["price"];?>
+<i>円 </i></td></td>
+            <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["cpu"];?>
 </td>
-            <td><i><?php echo $_smarty_tpl->tpl_vars['loop']->value["cpu"];?>
-</i></td>
 
         </tr>
         <?php
