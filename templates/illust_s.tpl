@@ -13,7 +13,7 @@
         <tr>
             <td>{$loop["PC_id"]}</td>
             <td>{$loop["name"]}</td>
-            <td>{$loop["dpi_L"]}<i>x</i>{$loop["dpi_L"]}</td>
+            <td>{$loop["dpi_L"]}<i>x</i>{$loop["dpi_R"]}</td>
         </tr>
         {/foreach}
     </table>

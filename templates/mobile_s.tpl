@@ -13,7 +13,7 @@
         <tr>
             <td>{$loop["PC_id"]}</td>
             <td>{$loop["name"]}</td>
-            <td>{number_format($loop["weight"])}<i>kg</i></td>
+            <td>{number_format($loop["weight"]),2}<i>kg</i></td>
         </tr>
         {/foreach}
     </table>
