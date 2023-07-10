@@ -31,30 +31,31 @@ function reverse_val($value){
 }
 
 
-function radercart($score_1, $score_2, $score_3, $score_4, $score_5){
-    //値
-    $values = array($score_1,$score_2,$score_3,$score_4,$score_5);
-    //ラベル
+function radercart($score_1, $score_2, $score_3, $score_4, $score_5)
+{
+    // 値
+    $values = array($score_1, $score_2, $score_3, $score_4, $score_5);
+    // ラベル
     $labels = array("価格", "重さ", "稼働時間", "メモリ", "ストレージ");
 
-    $max         = 75;    //上限
-    $step        = 10;     //目盛の間隔
-    $margin      = 80;    //グラフの余白
-    $text_margin = 15;    //ラベルの余白
-    $size        = 300;   //サイズ（正方形）
+    $max         = 75;    // 上限
+    $step        = 10;    // 目盛の間隔
+    $margin      = 80;    // グラフの余白
+    $text_margin = 15;    // ラベルの余白
+    $size        = 300;   // サイズ（正方形）
 
-    //フォント
+    // フォント
     $font = "migmix-1p-regular.ttf";
     $font_size = 10;
 
-    //画像
+    // 画像
     $image = imagecreatetruecolor($size + $margin, $size + $margin);
     imageantialias($image, true);
 
-    //色
+    // 色
     $bg   = imagecolorallocate($image, 255, 255, 255);    // 背景
-    $line = imagecolorallocate($image, 100, 100, 100); // チャートの線
-    $grid = imagecolorallocate($image, 50, 50, 50);    // グリッドの色
+    $line = imagecolorallocate($image, 100, 100, 100);    // チャートの線
+    $grid = imagecolorallocate($image, 50, 50, 50);       // グリッドの色
     $font_color = imagecolorallocate($image, 0, 0, 0);
 
     $center_x = round(($size + $margin) / 2);
@@ -78,22 +79,20 @@ function radercart($score_1, $score_2, $score_3, $score_4, $score_5){
         imagepolygon($image, $points, $count, $grid);
     }
 
-
     // 文字の描画
     for ($i = 0; $i < $count; $i++) {
         $box = imagettfbbox($font_size, 0, $font, $labels[$i]);
         $text_width = $box[2] - $box[6];
         $text_height = $box[3] - $box[7];
 
-        list($x, $y
-        ) = point_rotate($length + $text_margin, $div * $i - 90);
+        list($x, $y) = point_rotate($length + $text_margin, $div * $i - 90);
 
         $text_x = (-1 * $text_width / 2) + $center_x + $x;
         $text_y = ($text_height / 2) + $center_y + $y;
         imagettftext($image, $font_size, 0, $text_x, $text_y, $font_color, $font, $labels[$i]);
     }
 
-    for ($i = 0;$i <= $max;$i = $i + $step){
+    for ($i = 0; $i <= $max; $i = $i + $step) {
         $box = imagettfbbox($font_size, 0, $font, $i);
         $text_width = $box[2] - $box[6];
         $text_height = $box[3] - $box[7];
@@ -114,9 +113,12 @@ function radercart($score_1, $score_2, $score_3, $score_4, $score_5){
     imagepolygon($image, $points, $count, $line);
 
     // 画像の出力
-    header('Content-type: image/png');
-    imagepng($image);
+    $output_image = 'raderchart.png'; // 出力する画像ファイル名
+    imagepng($image, $output_image);
     imagedestroy($image);
+
+    // 画像のパスを返す
+    return $output_image;
 }
 
 function point_rotate($length, $angle){
