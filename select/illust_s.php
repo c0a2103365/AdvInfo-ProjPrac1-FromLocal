@@ -2,6 +2,9 @@
 require("../libDB.php");
 require ("../rader_function.php");
 
+$raderchart_image = radercart(70, 50, 60, 70, 40);
+echo '<img src="' . $raderchart_image . '" alt="Radar Chart">';
+
 $db = new libDB();
 $pdo = $db->getPDO();
 $sql = $pdo->query("SELECT dpi_R*dpi_L as maluti, dpi_R, dpi_L, PC_id, weight,memory,storage,price,cpu,name,battery  from PC ORDER BY maluti DESC");  
