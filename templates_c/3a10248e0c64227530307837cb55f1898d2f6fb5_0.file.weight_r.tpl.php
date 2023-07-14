@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-07 10:52:44
+/* Smarty version 3.1.39, created on 2023-07-14 06:46:52
   from 'C:\xampp\htdocs\pnw\2023g01\templates\weight_r.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64a7d25c117346_49384698',
+  'unifunc' => 'content_64b0d33c01cdc7_81277861',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3a10248e0c64227530307837cb55f1898d2f6fb5' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\weight_r.tpl',
-      1 => 1688719961,
+      1 => 1689308228,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64a7d25c117346_49384698 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64b0d33c01cdc7_81277861 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html> 
 <body>
 <h1>重さランキング</h1>
