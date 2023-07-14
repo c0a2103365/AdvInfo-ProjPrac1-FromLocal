@@ -23,8 +23,8 @@
 </div>
 
 <body>
-	<link rel="stylesheet" href="serch.css">
-	<link rel="stylesheet" href="ruby.css">
+	<link rel="stylesheet" href="css/serch.css">
+	<link rel="stylesheet" href="css/ruby.css">
 	{if $user_name}
 		<p>{$user_name}さんがログインしています。<br>
 			<a href="account.php">アカウント情報はこちら</a>
@@ -111,5 +111,5 @@
 		<p style="font-size: 200%;"><ruby><rb>検索結</rb><rp> (</rp><rt>けんさくけっ</rt><rp>) </rp><rb>果</rb><rp> (</rp><rt>か</rt><rp>) </rp></ruby>が<ruby><rb>見</rb><rp> (</rp><rt>み</rt><rp>) </rp></ruby>つかりませんでした。</p>
     {/if}
 </body>
-<script src="./main.js"></script>
+<script src="js/main.js"></script>
 </html>

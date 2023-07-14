@@ -1,18 +1,26 @@
 <?php
+<<<<<<< HEAD
+/* Smarty version 3.1.39, created on 2023-07-14 09:14:07
+=======
 /* Smarty version 3.1.39, created on 2023-07-14 09:37:07
+>>>>>>> 10e96f678fe0d7b98e7f43a6f8cb00be0330f8ca
   from 'C:\xampp\htdocs\pnw\2023g01\templates\price_r.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
+<<<<<<< HEAD
+  'unifunc' => 'content_64b0f5bf571966_58209327',
+=======
   'unifunc' => 'content_64b0fb231389c7_99675451',
+>>>>>>> 10e96f678fe0d7b98e7f43a6f8cb00be0330f8ca
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '405d524b89df4fd29ae445c9676d74e9253c6621' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\price_r.tpl',
-      1 => 1689320134,
+      1 => 1689318844,
       2 => 'file',
     ),
   ),
@@ -20,9 +28,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64b0fb231389c7_99675451 (Smarty_Internal_Template $_smarty_tpl) {
-?><html>
-<link rel="icon" href="../images/favicon.ico">  
+function content_64b0f5bf571966_58209327 (Smarty_Internal_Template $_smarty_tpl) {
+?><html> 
 <body>
 <h1>価格ランキング</h1>
 <form action="../ranking/price_r.php" method="get">
@@ -46,7 +53,7 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['loop']->value) {
 $_smarty_tpl->tpl_vars['loop']->do_else = false;
 ?>
         <tr>
-            <td><?php echo $_smarty_tpl->tpl_vars['i']->value;?>
+            <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["PC_id"];?>
 </td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["name"];?>
 </td>
