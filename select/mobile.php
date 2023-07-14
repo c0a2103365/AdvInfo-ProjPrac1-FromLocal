@@ -1,5 +1,7 @@
 <html>        
 <body>
+<link rel="stylesheet" media="all" href="../css/style.css">
+
 <?php
 require("../libDB.php");
 
@@ -17,6 +19,8 @@ $smarty = $pnw->getTpl();
 $smarty->assign("result",$result);
 
 $smarty->display("../templates/mobile.tpl");
+$smarty->display('template.tpl');
+
 
 
     

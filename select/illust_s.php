@@ -1,3 +1,5 @@
+<link rel="stylesheet" media="all" href="../css/style.css">
+
 <?php require("../libDB.php");  
 $db = new libDB(); 
 $pdo = $db->getPDO(); 

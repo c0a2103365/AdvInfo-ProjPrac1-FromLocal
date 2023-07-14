@@ -1,3 +1,5 @@
+<link rel="stylesheet" media="all" href="../css/style.css">
+
 <?php
     echo "<h2>用途ページ</h2><br/>";
     echo "<a href= ","illust_s.php"," >イラスト目的で使いたい人</a></br>";

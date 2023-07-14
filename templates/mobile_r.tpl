@@ -21,7 +21,7 @@
             <td>{number_format($loop["storage"])}<i>GB</i></td>
             <td>{number_format($loop["battery"],1)}<i>h</i></td>
             <td>{number_format($loop["price"])}<i>円</i></td>
-            <td>{$loop["memory"]}</td>
+            <td>{$loop["memory"]}<i>GB</i></td>
             <td>{number_format($loop["weight"], 2)}<i>kg</i></td>
             <td>{$loop["cpu"]}</td>
             

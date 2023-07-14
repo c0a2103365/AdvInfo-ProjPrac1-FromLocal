@@ -1,5 +1,11 @@
+<html>
+<link rel="icon" href="../images/favicon.ico"> 
+<body>
+<link rel="stylesheet"  href="../css/style.css">
+<h1>仕事をする人向け</h1>
+<form action="weight_r.php" method="GET">
 {if $result}
-    <table border="1">
+    <table class="work_s" border="1">
         <tr>
             <th>PC_id</th>
             <th>name</th>
@@ -21,7 +27,7 @@
                 <td>{$loop["office_app"]}</td>
                 <td>{number_format($loop["battery"],1)}<i>h</i></td>
                 <td>{number_format($loop["price"])}<i>円</i></td>
-                <td>{$loop["memory"]}</td>
+                <td>{$loop["memory"]}<i>GB</i></td>
                 <td>{number_format($loop["weight"], 2)}<i>kg</i></td> 
                 <td>{number_format($loop["storage"])}<i>GB</i></td>
                 <td>{$loop["cpu"]}</td>

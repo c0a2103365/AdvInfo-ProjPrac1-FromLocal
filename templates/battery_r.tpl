@@ -1,5 +1,7 @@
-<html> 
+<html>
+    <link rel="icon" href="../images/favicon.ico">  
 <body>
+    <link rel="stylesheet"  href="../css/style.css">
 <h1>稼働時間ランキング</h1>
 <form action="../ranking/battery_r.php" method="get">
 {if $result}
@@ -22,7 +24,7 @@
             <td>{$loop["name"]}</td>
             <td>{number_format($loop["battery"],1)}<i>h</i></td>
             <td>{number_format($loop["price"])}<i>円</i></td>
-            <td>{$loop["memory"]}</td>
+            <td>{$loop["memory"]}<i>GB</i></td>
             <td>{number_format($loop["weight"], 2)}<i>kg</i></td> 
             <td>{number_format($loop["storage"])}<i>GB</i></td>
             <td>{$loop["cpu"]}</td>
