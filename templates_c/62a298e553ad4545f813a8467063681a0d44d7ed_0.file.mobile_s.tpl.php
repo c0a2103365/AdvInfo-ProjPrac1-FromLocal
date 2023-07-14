@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-07 10:47:08
+/* Smarty version 3.1.39, created on 2023-07-14 06:56:44
   from 'C:\xampp\htdocs\pnw\2023g01\templates\mobile_s.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64a7d10ce02c89_30579972',
+  'unifunc' => 'content_64b0d58ccfa604_79635159',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '62a298e553ad4545f813a8467063681a0d44d7ed' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\mobile_s.tpl',
-      1 => 1688719503,
+      1 => 1689226346,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64a7d10ce02c89_30579972 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64b0d58ccfa604_79635159 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html> 
  
 <body>
@@ -54,9 +54,9 @@ $_smarty_tpl->tpl_vars['loop']->do_else = false;
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["battery"];?>
 <i>h</i></td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["memory"];?>
-</td>
+<i>GB</i></td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["storage"];?>
-</td>
+<i>GB</i></td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["price"];?>
 <i>円 </i></td></td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["cpu"];?>

@@ -9,8 +9,8 @@ $db = new libDB();
 $pdo = $db->getPDO();
 $sql = $pdo->query("SELECT * from PC");
 
-$sql->execute(); /*sqlの実行*/
-$result = $sql->fetchAll();/*sqlの結果の取得*/
+$sql->execute(); 
+$result = $sql->fetchAll();
 
 
 require_once("../pnwsmarty.php");

@@ -1,30 +1,18 @@
 <?php
-<<<<<<< HEAD
 /* Smarty version 3.1.39, created on 2023-07-13 06:43:59
-=======
-/* Smarty version 3.1.39, created on 2023-07-07 10:52:44
->>>>>>> e3520343d58ca095a1976552eb4532204ebef42e
   from 'C:\xampp\htdocs\pnw\2023g01\templates\weight_r.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-<<<<<<< HEAD
   'unifunc' => 'content_64af810f91f843_41264305',
-=======
-  'unifunc' => 'content_64a7d25c117346_49384698',
->>>>>>> e3520343d58ca095a1976552eb4532204ebef42e
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '3a10248e0c64227530307837cb55f1898d2f6fb5' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\weight_r.tpl',
-<<<<<<< HEAD
       1 => 1688713374,
-=======
-      1 => 1688719961,
->>>>>>> e3520343d58ca095a1976552eb4532204ebef42e
       2 => 'file',
     ),
   ),
@@ -32,11 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-<<<<<<< HEAD
 function content_64af810f91f843_41264305 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_64a7d25c117346_49384698 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> e3520343d58ca095a1976552eb4532204ebef42e
 ?><html> 
 <body>
 <h1>重さランキング</h1>
