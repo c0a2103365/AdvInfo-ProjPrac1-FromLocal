@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-14 09:42:59
+/* Smarty version 3.1.39, created on 2023-07-14 09:52:31
   from 'C:\xampp\htdocs\AdvInfo-ProjPrac1-FromLocal\templates\serch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64b0fc83a5f1d0_80398183',
+  'unifunc' => 'content_64b0febf397800_31028735',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c0124ee4f6e47b676a71d87e5671aa143a066955' => 
     array (
       0 => 'C:\\xampp\\htdocs\\AdvInfo-ProjPrac1-FromLocal\\templates\\serch.tpl',
-      1 => 1689309161,
+      1 => 1689321082,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64b0fc83a5f1d0_80398183 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64b0febf397800_31028735 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 
 <head>
@@ -56,8 +56,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </div>
 
 <body>
-	<link rel="stylesheet" href="serch.css">
-	<link rel="stylesheet" href="ruby.css">
+	<link rel="stylesheet" href="css/serch.css">
+	<link rel="stylesheet" href="css/ruby.css">
 	<?php if ($_smarty_tpl->tpl_vars['user_name']->value) {?>
 		<p><?php echo $_smarty_tpl->tpl_vars['user_name']->value;?>
 さんがログインしています。<br>
@@ -168,7 +168,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     <?php }?>
 </body>
 <?php echo '<script'; ?>
- src="./main.js"><?php echo '</script'; ?>
+ src="js/main.js"><?php echo '</script'; ?>
 >
 </html><?php }
 }

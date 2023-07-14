@@ -18,7 +18,7 @@
     content: "";           /* 疑似要素に必須 */
     width: 25px;           /* アイコンの横幅 */
     height: 25px;          /* アイコンの高さ */
-    background: url(images/serch.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
+    background: url(../images/serch.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
     display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
     position: absolute;    /* 相対位置に指定 */
     top: 20px;              /* アイコンの位置 */
