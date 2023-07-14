@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <html>
 <link rel="icon" href="../images/favicon.ico"> 
 <body>
@@ -6,6 +7,13 @@
 <form action="weight_r.php" method="GET">
 {if $result}
     <table class="work_s" border="1">
+=======
+<html> 
+<body>
+<h1>仕事したい人にお勧め</h1>
+<form action="../select/mobile_s.php" method="get">{if $result}
+    <table border="1">
+>>>>>>> fd98c840ed84d1316382a619d98f863a656c92d1
         <tr>
             <th>PC_id</th>
             <th>name</th>

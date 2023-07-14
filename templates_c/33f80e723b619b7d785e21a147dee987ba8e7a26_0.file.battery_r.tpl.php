@@ -1,7 +1,4 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-14 06:23:46
-  from 'C:\xampp\htdocs\pnw\2023g01\templates\battery_r.tpl' */
-
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
@@ -33,10 +30,10 @@ function content_64b0cdd2ee8e72_97597086 (Smarty_Internal_Template $_smarty_tpl)
             <th>PC_id</th>
             <th>name</th>
             <th>battery</th>
-            <th>price</th>
-            <th>memory</th>
             <th>weight</th>
+            <th>memory</th>
             <th>storage</th>
+            <th>price</th>
             <th>cpu</th>
 
         </tr>

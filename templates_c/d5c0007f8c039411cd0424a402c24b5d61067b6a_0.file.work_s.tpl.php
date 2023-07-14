@@ -34,11 +34,11 @@ function content_64af8cf2b8de17_69913306 (Smarty_Internal_Template $_smarty_tpl)
             <th>name</th>
             <th>inch</th>
             <th>office_app</th>
-            <th>battery</th>
-            <th>price</th>
-            <th>memory</th>
             <th>weight</th>
+            <th>battery</th>
+            <th>memory</th>
             <th>storage</th>
+            <th>price</th>
             <th>cpu</th>
         </tr>
         <?php

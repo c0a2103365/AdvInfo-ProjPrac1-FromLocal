@@ -1,5 +1,6 @@
 <html> 
 <body>
+    <link rel="stylesheet"  href="../css/style.css">
 <h1>データ保存量ランキング</h1>
 <form action="../ranking/mbile_r.php" method="get">
 {if $result}

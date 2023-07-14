@@ -53,10 +53,10 @@ $_smarty_tpl->tpl_vars['loop']->do_else = false;
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["dpi_L"];?>
 <i>x</i><?php echo $_smarty_tpl->tpl_vars['loop']->value["dpi_L"];?>
 </td>
-            <td><?php echo number_format($_smarty_tpl->tpl_vars['loop']->value["price"]);?>
-<i>円</i></td>
-            <td><?php echo number_format($_smarty_tpl->tpl_vars['loop']->value["battery"],1);?>
-<i>h</i></td>
+            <td><?php echo number_format($_smarty_tpl->tpl_vars['loop']->value["weight"],2);?>
+<i>kg</i></td>
+            <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["battery"];?>
+</td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["memory"];?>
 <i>GB</i></td>
             <td><?php echo number_format($_smarty_tpl->tpl_vars['loop']->value["weight"],2);?>

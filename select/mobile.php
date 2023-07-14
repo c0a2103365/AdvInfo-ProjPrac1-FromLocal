@@ -19,7 +19,6 @@ $smarty = $pnw->getTpl();
 $smarty->assign("result",$result);
 
 $smarty->display("../templates/mobile.tpl");
-$smarty->display('template.tpl');
 
 
 
