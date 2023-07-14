@@ -18,7 +18,7 @@
         </tr>
         {foreach $result as $loop}
         <tr>
-            <td>{$loop[""]}</td>
+            <td>{$i}</td>
             <td>{$loop["name"]}</td>
             <td>{number_format($loop["price"])}<i>円</i></td>
             <td>{number_format($loop["battery"],1)}<i>h</i></td>
@@ -27,6 +27,7 @@
             <td>{number_format($loop["storage"])}<i>GB</i></td>
             <td>{$loop["cpu"]}</td>
         </tr>
+        {$i++}
         {/foreach}
     </table>
 {else}

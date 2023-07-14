@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-14 09:21:01
+/* Smarty version 3.1.39, created on 2023-07-14 09:33:11
   from 'C:\xampp\htdocs\pnw\2023g01\templates\mobile_r.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64b0f75d080f03_09578642',
+  'unifunc' => 'content_64b0fa378b5584_89491053',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f22e12de872a1acbb1d6962c737950e867304215' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\mobile_r.tpl',
-      1 => 1689319205,
+      1 => 1689319771,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64b0f75d080f03_09578642 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64b0fa378b5584_89491053 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 <link rel="icon" href="../images/favicon.ico">  
 <body>
