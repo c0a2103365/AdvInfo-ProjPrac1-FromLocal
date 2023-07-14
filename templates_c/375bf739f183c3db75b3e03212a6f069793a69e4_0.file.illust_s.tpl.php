@@ -1,30 +1,18 @@
 <?php
-<<<<<<< HEAD
-/* Smarty version 3.1.39, created on 2023-07-13 07:33:50
-=======
-/* Smarty version 3.1.39, created on 2023-07-07 10:18:31
->>>>>>> e3520343d58ca095a1976552eb4532204ebef42e
+/* Smarty version 3.1.39, created on 2023-07-14 07:38:38
   from 'C:\xampp\htdocs\pnw\2023g01\templates\illust_s.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-<<<<<<< HEAD
-  'unifunc' => 'content_64af8cbe225dd7_04979567',
-=======
-  'unifunc' => 'content_64a7ca57a5c671_23639481',
->>>>>>> e3520343d58ca095a1976552eb4532204ebef42e
+  'unifunc' => 'content_64b0df5e400e27_47481642',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '375bf739f183c3db75b3e03212a6f069793a69e4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\illust_s.tpl',
-<<<<<<< HEAD
-      1 => 1689226290,
-=======
-      1 => 1688717606,
->>>>>>> e3520343d58ca095a1976552eb4532204ebef42e
+      1 => 1689313103,
       2 => 'file',
     ),
   ),
@@ -32,12 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-<<<<<<< HEAD
-function content_64af8cbe225dd7_04979567 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_64a7ca57a5c671_23639481 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> e3520343d58ca095a1976552eb4532204ebef42e
-?><html> 
+function content_64b0df5e400e27_47481642 (Smarty_Internal_Template $_smarty_tpl) {
+?><html>
+<link rel="icon" href="../images/favicon.ico">  
 <body>
 <h1>画質を求める人</h1>
 <form action="../select/_s.php" method="get">
@@ -74,11 +59,7 @@ $_smarty_tpl->tpl_vars['loop']->do_else = false;
             <td><?php echo number_format($_smarty_tpl->tpl_vars['loop']->value["battery"],1);?>
 <i>h</i></td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["memory"];?>
-<<<<<<< HEAD
 <i>GB</i></td>
-=======
-</td>
->>>>>>> e3520343d58ca095a1976552eb4532204ebef42e
             <td><?php echo number_format($_smarty_tpl->tpl_vars['loop']->value["weight"],2);?>
 <i>kg</i></td> 
             <td><?php echo number_format($_smarty_tpl->tpl_vars['loop']->value["storage"]);?>

@@ -1,30 +1,18 @@
 <?php
-<<<<<<< HEAD
-/* Smarty version 3.1.39, created on 2023-07-14 06:23:43
-=======
-/* Smarty version 3.1.39, created on 2023-07-07 10:46:57
->>>>>>> e3520343d58ca095a1976552eb4532204ebef42e
+/* Smarty version 3.1.39, created on 2023-07-14 07:40:46
   from 'C:\xampp\htdocs\pnw\2023g01\templates\mobile_r.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-<<<<<<< HEAD
-  'unifunc' => 'content_64b0cdcfd53711_70656286',
-=======
-  'unifunc' => 'content_64a7d101eebbe9_64962686',
->>>>>>> e3520343d58ca095a1976552eb4532204ebef42e
+  'unifunc' => 'content_64b0dfde76f340_77887283',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f22e12de872a1acbb1d6962c737950e867304215' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\mobile_r.tpl',
-<<<<<<< HEAD
-      1 => 1689226365,
-=======
-      1 => 1688719363,
->>>>>>> e3520343d58ca095a1976552eb4532204ebef42e
+      1 => 1689313244,
       2 => 'file',
     ),
   ),
@@ -32,13 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-<<<<<<< HEAD
-function content_64b0cdcfd53711_70656286 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_64a7d101eebbe9_64962686 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> e3520343d58ca095a1976552eb4532204ebef42e
-?><html> 
+function content_64b0dfde76f340_77887283 (Smarty_Internal_Template $_smarty_tpl) {
+?><html>
+<link rel="icon" href="../images/favicon.ico">  
 <body>
+    <link rel="stylesheet"  href="../css/style.css">
 <h1>データ保存量ランキング</h1>
 <form action="../ranking/mbile_r.php" method="get">
 <?php if ($_smarty_tpl->tpl_vars['result']->value) {?>
@@ -76,13 +62,6 @@ $_smarty_tpl->tpl_vars['loop']->do_else = false;
 <i>kg</i></td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["cpu"];?>
 </td>
-<<<<<<< HEAD
-=======
-            <td><?php echo number_format($_smarty_tpl->tpl_vars['loop']->value["weight"],2);?>
-<i>kg</i></td>
-            <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["cpu"];?>
-</td>
->>>>>>> e3520343d58ca095a1976552eb4532204ebef42e
             
 
         </tr>

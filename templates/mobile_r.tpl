@@ -1,4 +1,5 @@
-<html> 
+<html>
+<link rel="icon" href="../images/favicon.ico">  
 <body>
     <link rel="stylesheet"  href="../css/style.css">
 <h1>データ保存量ランキング</h1>
