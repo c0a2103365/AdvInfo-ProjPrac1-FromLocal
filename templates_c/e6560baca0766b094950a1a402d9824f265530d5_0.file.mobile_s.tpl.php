@@ -1,18 +1,32 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-14 07:38:41
-  from 'C:\xampp\htdocs\pnw\2023g01\templates\mobile_s.tpl' */
+<<<<<<< HEAD:templates_c/33f80e723b619b7d785e21a147dee987ba8e7a26_0.file.battery_r.tpl.php
+/* Smarty version 3.1.39, created on 2023-07-14 09:38:18
+  from 'C:\xampp\htdocs\pnw\2023g01\templates\battery_r.tpl' */
+=======
+/* Smarty version 3.1.39, created on 2023-07-14 07:09:02
+  from 'C:\xampp\htdocs\AdvInfo-ProjPrac1-FromLocal\templates\mobile_s.tpl' */
+>>>>>>> 7e7a67aad66e3c038767a2980bc68f77bbc96e89:templates_c/e6560baca0766b094950a1a402d9824f265530d5_0.file.mobile_s.tpl.php
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64b0df611f00a0_06290005',
+<<<<<<< HEAD:templates_c/33f80e723b619b7d785e21a147dee987ba8e7a26_0.file.battery_r.tpl.php
+  'unifunc' => 'content_64b0fb6a497cb6_92470766',
+=======
+  'unifunc' => 'content_64b0d86e744083_76998450',
+>>>>>>> 7e7a67aad66e3c038767a2980bc68f77bbc96e89:templates_c/e6560baca0766b094950a1a402d9824f265530d5_0.file.mobile_s.tpl.php
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '62a298e553ad4545f813a8467063681a0d44d7ed' => 
+    'e6560baca0766b094950a1a402d9824f265530d5' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\mobile_s.tpl',
-      1 => 1689313105,
+<<<<<<< HEAD:templates_c/33f80e723b619b7d785e21a147dee987ba8e7a26_0.file.battery_r.tpl.php
+      0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\battery_r.tpl',
+      1 => 1689320295,
+=======
+      0 => 'C:\\xampp\\htdocs\\AdvInfo-ProjPrac1-FromLocal\\templates\\mobile_s.tpl',
+      1 => 1689311129,
+>>>>>>> 7e7a67aad66e3c038767a2980bc68f77bbc96e89:templates_c/e6560baca0766b094950a1a402d9824f265530d5_0.file.mobile_s.tpl.php
       2 => 'file',
     ),
   ),
@@ -20,9 +34,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64b0df611f00a0_06290005 (Smarty_Internal_Template $_smarty_tpl) {
+<<<<<<< HEAD:templates_c/33f80e723b619b7d785e21a147dee987ba8e7a26_0.file.battery_r.tpl.php
+function content_64b0fb6a497cb6_92470766 (Smarty_Internal_Template $_smarty_tpl) {
+?><html>
+<link rel="icon" href="../images/favicon.ico">   
+=======
+function content_64b0d86e744083_76998450 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html> 
-<link rel="icon" href="../images/favicon.ico">  
+ 
+>>>>>>> 7e7a67aad66e3c038767a2980bc68f77bbc96e89:templates_c/e6560baca0766b094950a1a402d9824f265530d5_0.file.mobile_s.tpl.php
 <body>
 <h1>持ち運びにおすすめ</h1>
 <form action="../select/mobile_s.php" method="get">
@@ -45,7 +65,7 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['loop']->value) {
 $_smarty_tpl->tpl_vars['loop']->do_else = false;
 ?>
         <tr>
-            <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["PC_id"];?>
+            <td><?php echo $_smarty_tpl->tpl_vars['i']->value;?>
 </td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["name"];?>
 </td>
@@ -63,6 +83,8 @@ $_smarty_tpl->tpl_vars['loop']->do_else = false;
 </td>
             
         </tr>
+        <?php echo $_smarty_tpl->tpl_vars['i']->value++;?>
+
         <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>

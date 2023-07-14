@@ -1,5 +1,5 @@
 <html>
-    <link rel="icon" href="../images/favicon.ico">  
+<link rel="icon" href="../images/favicon.ico">   
 <body>
     <link rel="stylesheet"  href="../css/style.css">
 <h1>稼働時間ランキング</h1>
@@ -19,7 +19,7 @@
         </tr>
         {foreach $result as $loop}
         <tr>
-            <td>{$loop["PC_id"]}</td>
+            <td>{$i}</td>
             <td>{$loop["name"]}</td>
             <td>{number_format($loop["battery"],1)}<i>h</i></td>
             <td>{number_format($loop["price"])}<i>円</i></td>
@@ -29,6 +29,7 @@
             <td>{$loop["cpu"]}</td>
 
         </tr>
+        {$i++}
         {/foreach}
     </table>
 {else}

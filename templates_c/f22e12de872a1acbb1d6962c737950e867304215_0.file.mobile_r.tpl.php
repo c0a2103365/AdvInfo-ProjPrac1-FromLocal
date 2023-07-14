@@ -23,6 +23,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
 function content_64b0cdcfd53711_70656286 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html> 
 <body>
+    <link rel="stylesheet"  href="../css/style.css">
 <h1>データ保存量ランキング</h1>
 <form action="../ranking/mbile_r.php" method="get">
 <?php if ($_smarty_tpl->tpl_vars['result']->value) {?>
@@ -44,7 +45,7 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['loop']->value) {
 $_smarty_tpl->tpl_vars['loop']->do_else = false;
 ?>
         <tr>
-            <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["PC_id"];?>
+            <td><?php echo $_smarty_tpl->tpl_vars['i']->value;?>
 </td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["name"];?>
 </td>
@@ -61,11 +62,16 @@ $_smarty_tpl->tpl_vars['loop']->do_else = false;
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["cpu"];?>
 </td>
             
-
+      
         </tr>
+        <?php echo $_smarty_tpl->tpl_vars['i']->value++;?>
+
         <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+        
+       
+    
     </table>
 <?php } else { ?>
     "sippai"
@@ -78,3 +84,4 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </body>
 </html><?php }
 }
+

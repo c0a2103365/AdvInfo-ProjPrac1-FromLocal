@@ -1,4 +1,5 @@
-<html> 
+<html>
+<link rel="icon" href="../images/favicon.ico">  
 <body>
     <link rel="stylesheet"  href="../css/style.css">
 <h1>データ保存量ランキング</h1>
@@ -17,7 +18,7 @@
         </tr>
         {foreach $result as $loop}
         <tr>
-            <td>{$loop["PC_id"]}</td>
+            <td>{$i}</td>
             <td>{$loop["name"]}</td>
             <td>{number_format($loop["storage"])}<i>GB</i></td>
             <td>{number_format($loop["battery"],1)}<i>h</i></td>
@@ -26,9 +27,13 @@
             <td>{number_format($loop["weight"], 2)}<i>kg</i></td>
             <td>{$loop["cpu"]}</td>
             
-
+      
         </tr>
+        {$i++}
         {/foreach}
+        
+       
+    
     </table>
 {else}
     "sippai"

@@ -1,5 +1,5 @@
 <html> 
- 
+<link rel="icon" href="../images/favicon.ico">  
 <body>
 <h1>持ち運びにおすすめ</h1>
 <form action="../select/mobile_s.php" method="get">

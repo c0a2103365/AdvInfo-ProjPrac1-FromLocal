@@ -44,7 +44,8 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['loop']->value) {
 $_smarty_tpl->tpl_vars['loop']->do_else = false;
 ?>
         <tr>
-            
+            <td><?php echo $_smarty_tpl->tpl_vars['i']->value;?>
+</td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["PC_id"];?>
 </td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["name"];?>
@@ -64,6 +65,8 @@ $_smarty_tpl->tpl_vars['loop']->do_else = false;
             
 
         </tr>
+        <?php echo $_smarty_tpl->tpl_vars['i']->value++;?>
+
         <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
@@ -79,3 +82,4 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </body>
 </html><?php }
 }
+

@@ -1,5 +1,5 @@
-<html> 
-    
+<html>
+<link rel="icon" href="../images/favicon.ico"> 
 <body>
 <link rel="stylesheet" media="all" href="../css/style2.css">
 <form action="../ranking/ranking.php" method="GET">

@@ -22,6 +22,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
 ),false)) {
 function content_64b0fb7322f5c0_58012001 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
+<link rel="icon" href="../images/favicon.ico"> 
 <link rel="stylesheet" media="all" href="css/style.css"> 
 <body>
 <link rel="stylesheet"  href="../css/style2.css">
