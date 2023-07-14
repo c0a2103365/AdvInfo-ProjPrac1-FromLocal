@@ -20,7 +20,7 @@
         <tr>
             <td>{$loop["PC_id"]}</td>
             <td>{$loop["name"]}</td>
-            <td>{$loop["dpi_L"]}<i>x</i>{$loop["dpi_L"]}</td>
+            <td>{$loop["dpi_L"]}<i>x</i>{$loop["dpi_R"]}</td>
             <td>{number_format($loop["price"])}<i>円</i></td>
             <td>{number_format($loop["battery"],1)}<i>h</i></td>
             <td>{$loop["memory"]}<i>GB</i></td>

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-13 07:33:50
+/* Smarty version 3.1.39, created on 2023-07-14 08:42:30
   from 'C:\xampp\htdocs\pnw\2023g01\templates\illust_s.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64af8cbe225dd7_04979567',
+  'unifunc' => 'content_64b0ee5610bdf8_52133572',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '375bf739f183c3db75b3e03212a6f069793a69e4' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\illust_s.tpl',
-      1 => 1689226290,
+      1 => 1689316916,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64af8cbe225dd7_04979567 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64b0ee5610bdf8_52133572 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html> 
 <body>
 <h1>画質を求める人</h1>
@@ -51,7 +51,7 @@ $_smarty_tpl->tpl_vars['loop']->do_else = false;
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["name"];?>
 </td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["dpi_L"];?>
-<i>x</i><?php echo $_smarty_tpl->tpl_vars['loop']->value["dpi_L"];?>
+<i>x</i><?php echo $_smarty_tpl->tpl_vars['loop']->value["dpi_R"];?>
 </td>
             <td><?php echo number_format($_smarty_tpl->tpl_vars['loop']->value["price"]);?>
 <i>円</i></td>

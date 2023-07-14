@@ -17,7 +17,7 @@
         </tr>
         {foreach $result as $loop}
         <tr>
-            <td>{$loop[""]}</td>
+            <td>{$loop["PC_id"]}</td>
             <td>{$loop["name"]}</td>
             <td>{number_format($loop["price"])}<i>円</i></td>
             <td>{number_format($loop["battery"],1)}<i>h</i></td>
