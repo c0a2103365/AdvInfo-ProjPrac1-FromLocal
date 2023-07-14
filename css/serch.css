@@ -1,0 +1,60 @@
+  .heart {
+    width: 30%;
+  }
+
+  .on{
+    fill: red;
+  }
+  .off{
+    fill: rgb(209, 209, 209);
+  }
+
+  .search_box {
+    display: inline-block; /* なくても大丈夫だけど、念の為 */
+    position: relative;    /* 基準値とする */
+  }
+  
+  .search_box::before {
+    content: "";           /* 疑似要素に必須 */
+    width: 25px;           /* アイコンの横幅 */
+    height: 25px;          /* アイコンの高さ */
+    background: url(images/serch.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
+    display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
+    position: absolute;    /* 相対位置に指定 */
+    top: 20px;              /* アイコンの位置 */
+    left: 16px;             /* アイコンの位置 */
+  }
+  
+  .search_box input {
+    font-size: 20px;
+    padding: 20px 80px 20px 2.7em; /* アイコンを設置するため左の余白を多めに指定*/
+  }  
+
+  /* ポップアップのスタイル */
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 15%;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+    display: none; /* 最初は非表示 */
+    overflow-y: auto; /* 垂直方向のスクロールバーを表示 */
+    max-height: 80vh; /* ポップアップの高さが画面の80%を超えた場合にスクロールバーを表示 */
+  }
+
+  /* オーバーレイのスタイル */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* 半透明の背景色 */
+    z-index: 9998;
+    display: none; /* 最初は非表示 */
+  }
