@@ -5,7 +5,7 @@
 {if $result}
     <table border="1">
         <tr>
-            <th>PC_id</th>
+            <th>ranking</th>
             <th>name</th>
             <th>storage</th>
             <th>battery</th>

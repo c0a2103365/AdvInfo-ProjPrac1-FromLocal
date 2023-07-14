@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-07 07:44:43
+/* Smarty version 3.1.39, created on 2023-07-07 10:46:57
   from 'C:\xampp\htdocs\pnw\2023g01\templates\mobile_r.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64a7a64b85e740_36039574',
+  'unifunc' => 'content_64a7d101eebbe9_64962686',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f22e12de872a1acbb1d6962c737950e867304215' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\mobile_r.tpl',
-      1 => 1688708361,
+      1 => 1688719363,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64a7a64b85e740_36039574 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64a7d101eebbe9_64962686 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html> 
 <body>
 <h1>データ保存量ランキング</h1>
@@ -28,13 +28,13 @@ function content_64a7a64b85e740_36039574 (Smarty_Internal_Template $_smarty_tpl)
 <?php if ($_smarty_tpl->tpl_vars['result']->value) {?>
     <table border="1">
         <tr>
-            <th>PC_id</th>
+            <th>ranking</th>
             <th>name</th>
             <th>storage</th>
-            <th>weight</th>
             <th>battery</th>
-            <th>memory</th>
             <th>price</th>
+            <th>memory</th>
+            <th>weight</th>
             <th>cpu</th>
         </tr>
         <?php
@@ -50,16 +50,17 @@ $_smarty_tpl->tpl_vars['loop']->do_else = false;
 </td>
             <td><?php echo number_format($_smarty_tpl->tpl_vars['loop']->value["storage"]);?>
 <i>GB</i></td>
-            <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["weight"];?>
-</td>
-            <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["battery"];?>
-</td>
+            <td><?php echo number_format($_smarty_tpl->tpl_vars['loop']->value["battery"],1);?>
+<i>h</i></td>
+            <td><?php echo number_format($_smarty_tpl->tpl_vars['loop']->value["price"]);?>
+<i>円</i></td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["memory"];?>
 </td>
-            <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["price"];?>
+            <td><?php echo number_format($_smarty_tpl->tpl_vars['loop']->value["weight"],2);?>
+<i>kg</i></td>
+            <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["cpu"];?>
 </td>
-            <td><i><?php echo $_smarty_tpl->tpl_vars['loop']->value["cpu"];?>
-</i></td>
+            
 
         </tr>
         <?php

@@ -1,6 +1,6 @@
 <?php require("../libDB.php");  
 $db = new libDB(); 
-$pdo = $db->getPDO(); 
+$pdo = $db->getPDO();
 $sql = $pdo->query("SELECT * from PC ORDER BY battery DESC");  
 $sql->execute(); /*sqlの実行*/ 
 $result = $sql->fetchAll(); /*sqlの結果の取得*/   

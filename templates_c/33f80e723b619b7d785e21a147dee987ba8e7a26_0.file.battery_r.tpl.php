@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-07 08:59:13
+/* Smarty version 3.1.39, created on 2023-07-07 10:38:48
   from 'C:\xampp\htdocs\pnw\2023g01\templates\battery_r.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64a7b7c106afe2_42219538',
+  'unifunc' => 'content_64a7cf1861f208_70938355',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '33f80e723b619b7d785e21a147dee987ba8e7a26' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\battery_r.tpl',
-      1 => 1688712734,
+      1 => 1688719124,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64a7b7c106afe2_42219538 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64a7cf1861f208_70938355 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html> 
 <body>
 <h1>稼働時間ランキング</h1>
@@ -28,13 +28,14 @@ function content_64a7b7c106afe2_42219538 (Smarty_Internal_Template $_smarty_tpl)
 <?php if ($_smarty_tpl->tpl_vars['result']->value) {?>
     <table border="1">
         <tr>
+            <th>ranking</th>
             <th>PC_id</th>
             <th>name</th>
             <th>battery</th>
-            <th>weight</th>
-            <th>memory</th>
-            <th>storage</th>
             <th>price</th>
+            <th>memory</th>
+            <th>weight</th>
+            <th>storage</th>
             <th>cpu</th>
 
         </tr>
@@ -45,7 +46,8 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['loop']->value) {
 $_smarty_tpl->tpl_vars['loop']->do_else = false;
 ?>
         <tr>
-            
+            <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["PC_id"];?>
+</td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["PC_id"];?>
 </td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["name"];?>
