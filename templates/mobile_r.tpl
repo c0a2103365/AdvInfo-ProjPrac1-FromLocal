@@ -1,5 +1,6 @@
 <html> 
 <body>
+    <link rel="stylesheet"  href="../css/style.css">
 <h1>データ保存量ランキング</h1>
 <form action="../ranking/mbile_r.php" method="get">
 {if $result}
@@ -21,7 +22,7 @@
             <td>{number_format($loop["storage"])}<i>GB</i></td>
             <td>{number_format($loop["battery"],1)}<i>h</i></td>
             <td>{number_format($loop["price"])}<i>円</i></td>
-            <td>{$loop["memory"]}</td>
+            <td>{$loop["memory"]}<i>GB</i></td>
             <td>{number_format($loop["weight"], 2)}<i>kg</i></td>
             <td>{$loop["cpu"]}</td>
             

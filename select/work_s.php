@@ -1,3 +1,5 @@
+<link rel="stylesheet" media="all" href="../css/style.css">
+
 <?php require("../libDB.php");  
 $db = new libDB(); 
 $pdo = $db->getPDO(); 
@@ -9,4 +11,5 @@ $pnw = new pnwsmarty();
 $smarty = $pnw->getTpl(); 
 $smarty->assign("result",$result);  
 $smarty->display("../templates/work_s.tpl");  
+
 ?>

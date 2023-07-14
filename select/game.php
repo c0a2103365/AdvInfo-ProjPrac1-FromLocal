@@ -1,4 +1,6 @@
-<html>        
+<html>
+<link rel="stylesheet" media="all" href="../css/style.css">
+        
 <body>
 <?php
 require("../libDB.php");
