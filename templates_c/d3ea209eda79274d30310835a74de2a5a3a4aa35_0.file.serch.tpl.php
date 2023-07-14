@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-10 07:36:06
+/* Smarty version 3.1.39, created on 2023-07-14 08:02:30
   from 'C:\xampp\htdocs\pnw\2023g01\templates\serch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64ab98c696afd8_13504548',
+  'unifunc' => 'content_64b0e4f68c1ef1_06456182',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd3ea209eda79274d30310835a74de2a5a3a4aa35' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\serch.tpl',
-      1 => 1688705404,
+      1 => 1689311782,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64ab98c696afd8_13504548 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64b0e4f68c1ef1_06456182 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 
 <head>
@@ -49,7 +49,7 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['loop']->value) {
 $_smarty_tpl->tpl_vars['loop']->do_else = false;
 ?>
 			<div style="border: #28CF75 outset 6px; border-radius:20px; font-size: 100%; margin-bottom: 50px; padding: 15px; width: 450px;">
-				<input style="cursor: pointer; transform: scale(3); margin: 0 15px 0 15px;" type="checkbox" name="choice[]" value="選択"> 選択 
+				<input class="choice" style="cursor: pointer; transform: scale(3); margin: 0 15px 0 15px;" type="checkbox" name="choice[]" value="選択"> 選択 
 				<img src="<?php echo $_smarty_tpl->tpl_vars['loop']->value["image_path"];?>
 " style="margin: auto; display: block; padding: 15px; width: 300px;">
 				<i>製品名　：</i>

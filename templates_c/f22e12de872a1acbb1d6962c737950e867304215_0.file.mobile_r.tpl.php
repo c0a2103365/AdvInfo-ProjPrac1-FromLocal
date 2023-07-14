@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-14 09:33:11
+/* Smarty version 3.1.39, created on 2023-07-14 06:23:43
   from 'C:\xampp\htdocs\pnw\2023g01\templates\mobile_r.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64b0fa378b5584_89491053',
+  'unifunc' => 'content_64b0cdcfd53711_70656286',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f22e12de872a1acbb1d6962c737950e867304215' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\mobile_r.tpl',
-      1 => 1689319771,
+      1 => 1689226365,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64b0fa378b5584_89491053 (Smarty_Internal_Template $_smarty_tpl) {
-?><html>
-<link rel="icon" href="../images/favicon.ico">  
+function content_64b0cdcfd53711_70656286 (Smarty_Internal_Template $_smarty_tpl) {
+?><html> 
 <body>
     <link rel="stylesheet"  href="../css/style.css">
 <h1>データ保存量ランキング</h1>

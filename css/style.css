@@ -20,7 +20,7 @@ body{
 	-webkit-text-size-adjust:100%;
 	overflow-x: hidden;
 	color: #000;
-	background: #fff;
+	background: #ffffff;
 }
 
 a{
@@ -116,7 +116,7 @@ section h2{
 .col2 li{
 	display: inline-block;
 	width: 100%;
-  	margin: 20px 0 20px 0;
+  	margin: 20px 0 10px 0;
 }
 
 
@@ -257,13 +257,16 @@ section h2{
 	}
 
 	#mainnav ul{
+
+		background: rgba(255, 255, 255, 0.9);
+		border-bottom: 1px solid #d1d1d1;
 		text-align: right;
 		padding-right: 30px;
 	}
 
 	#mainnav li{
 		display: inline-block;
-		padding: 45px 10px 20px;
+		padding: 20px 10px 30px;
 		font-size: 14px;
 		font-weight: 300;
 	}
@@ -273,7 +276,7 @@ section h2{
 	}
 	
 	#mainnav.changeNav{
-		background: rgba(255,255,255,.9);
+		background: rgba(255, 255, 255, 0.9);
 		border-bottom: 1px solid #d1d1d1;
 	}
 	
@@ -353,9 +356,9 @@ section h2{
   a#menu{
   	display: inline-block;
   	position: relative;
-  	width: 40px;
-  	height: 40px;
-  	margin: 10px;
+  	width: 2%;
+  	height: 2%;
+  	margin: 2%;
 	}
 
 	#menuBtn{
