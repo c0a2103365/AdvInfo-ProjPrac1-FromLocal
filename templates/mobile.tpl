@@ -20,11 +20,11 @@
         <tr>
             <td>{$loop["PC_id"]}</td>
             <td>{$loop["name"]}</td>
-            <td>{$loop["weight"]}</td>
-            <td>{$loop["battery"]}</td>
-            <td>{$loop["memory"]}</td>
-            <td>{$loop["storage"]}</td>
-            <td>{$loop["price"]}</td>
+            <td>{$loop["weight"]}<i>kg</i></td>
+            <td>{$loop["battery"]}<i>h</i></td>
+            <td>{$loop["memory"]}<i>GB</i></td>
+            <td>{$loop["storage"]}<i>GB</i></td>
+            <td>{$loop["price"]}<i>円</i></td>
         </tr>
         {/foreach}
     </table>

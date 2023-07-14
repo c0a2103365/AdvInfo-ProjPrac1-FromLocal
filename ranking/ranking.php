@@ -1,3 +1,5 @@
+
+<link rel="stylesheet" media="all" href="../css/style.css">
 <?php
     echo "<h2>ランキングページ</h2><br/>";
     echo "<a href= ","weight_r.php"," >重さランキング</a>";
