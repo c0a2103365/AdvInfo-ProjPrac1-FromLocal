@@ -1,5 +1,5 @@
 <html>
-    <link rel="icon" href="../images/favicon.ico">  
+<link rel="icon" href="../images/favicon.ico">   
 <body>
     <link rel="stylesheet"  href="../css/style.css">
 <h1>稼働時間ランキング</h1>

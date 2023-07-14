@@ -4,11 +4,14 @@ require("../libDB.php");
 $db = new libDB(); 
 $pdo = $db->getPDO(); 
 $sql = $pdo->query("SELECT * from PC ORDER BY storage DESC");  
-$sql->execute(); //sqlの実行*/ 
-$result = $sql->fetchAll(); //sqlの結果の取得*/   
+$sql->execute(); //sqlの実行
+$result = $sql->fetchAll(); //sqlの結果の取得
 require_once("../pnwsmarty.php"); 
 $pnw = new pnwsmarty(); 
-$smarty = $pnw->getTpl(); 
+$smarty = $pnw->getTpl();
+$i=1 ;
+$smarty->assign("i",$i);
 $smarty->assign("result",$result);  
-$smarty->display("../templates/mobile_r.tpl");  
+$smarty->display("../templates/mobile_r.tpl");
+  
 ?>

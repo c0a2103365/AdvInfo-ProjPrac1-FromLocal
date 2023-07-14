@@ -1,4 +1,5 @@
 <html>
+<link rel="icon" href="../images/favicon.ico"> 
 <link rel="stylesheet" media="all" href="css/style.css"> 
 <body>
 

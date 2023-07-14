@@ -1,4 +1,5 @@
-<html> 
+<html>
+<link rel="icon" href="../images/favicon.ico">  
 <body>
 <h1>価格ランキング</h1>
 <form action="../ranking/price_r.php" method="get">

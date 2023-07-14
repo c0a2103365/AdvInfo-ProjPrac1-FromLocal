@@ -1,4 +1,5 @@
-<html> 
+<html>
+<link rel="icon" href="../images/favicon.ico">  
 <body>
 <h1>重さランキング</h1>
 <form action="../ranking/weight_r.php" method="get">

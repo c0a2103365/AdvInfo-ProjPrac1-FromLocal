@@ -1,4 +1,5 @@
-<html> 
+<html>
+<link rel="icon" href="../images/favicon.ico">  
 <body>
 <h1>画質を求める人</h1>
 <form action="../select/_s.php" method="get">
