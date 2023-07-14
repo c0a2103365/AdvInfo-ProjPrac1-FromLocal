@@ -1,18 +1,29 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-07 09:03:36
+<<<<<<< HEAD
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.39',
+  'unifunc' => 'content_64b0cdd2ee8e72_97597086',
+=======
+/* Smarty version 3.1.39, created on 2023-07-07 10:38:48
   from 'C:\xampp\htdocs\pnw\2023g01\templates\battery_r.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64a7b8c84b1006_88311219',
+  'unifunc' => 'content_64a7cf1861f208_70938355',
+>>>>>>> e3520343d58ca095a1976552eb4532204ebef42e
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '33f80e723b619b7d785e21a147dee987ba8e7a26' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\battery_r.tpl',
-      1 => 1688713267,
+<<<<<<< HEAD
+      1 => 1689308377,
+=======
+      1 => 1688719124,
+>>>>>>> e3520343d58ca095a1976552eb4532204ebef42e
       2 => 'file',
     ),
   ),
@@ -20,14 +31,22 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64a7b8c84b1006_88311219 (Smarty_Internal_Template $_smarty_tpl) {
+<<<<<<< HEAD
+function content_64b0cdd2ee8e72_97597086 (Smarty_Internal_Template $_smarty_tpl) {
+?><html>
+    <link rel="icon" href="../images/favicon.ico">  
+=======
+function content_64a7cf1861f208_70938355 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html> 
+>>>>>>> e3520343d58ca095a1976552eb4532204ebef42e
 <body>
+    <link rel="stylesheet"  href="../css/style.css">
 <h1>稼働時間ランキング</h1>
 <form action="../ranking/battery_r.php" method="get">
 <?php if ($_smarty_tpl->tpl_vars['result']->value) {?>
     <table border="1">
         <tr>
+            <th>ranking</th>
             <th>PC_id</th>
             <th>name</th>
             <th>battery</th>
@@ -45,7 +64,8 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['loop']->value) {
 $_smarty_tpl->tpl_vars['loop']->do_else = false;
 ?>
         <tr>
-            
+            <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["PC_id"];?>
+</td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["PC_id"];?>
 </td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["name"];?>
@@ -55,7 +75,7 @@ $_smarty_tpl->tpl_vars['loop']->do_else = false;
             <td><?php echo number_format($_smarty_tpl->tpl_vars['loop']->value["price"]);?>
 <i>円</i></td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["memory"];?>
-</td>
+<i>GB</i></td>
             <td><?php echo number_format($_smarty_tpl->tpl_vars['loop']->value["weight"],2);?>
 <i>kg</i></td> 
             <td><?php echo number_format($_smarty_tpl->tpl_vars['loop']->value["storage"]);?>

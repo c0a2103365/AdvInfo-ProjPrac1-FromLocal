@@ -1,4 +1,5 @@
 <html> 
+ 
 <body>
 <h1>持ち運びにおすすめ</h1>
 <form action="../select/mobile_s.php" method="get">
@@ -19,9 +20,9 @@
             <td>{$loop["PC_id"]}</td>
             <td>{$loop["name"]}</td>
             <td>{number_format($loop["weight"], 2)}<i>kg</i></td>
-            <td>{$loop["battery"]}</td>
-            <td>{$loop["memory"]}</td>
-            <td>{$loop["storage"]}</td>
+            <td>{$loop["battery"]}<i>h</i></td>
+            <td>{$loop["memory"]}<i>GB</i></td>
+            <td>{$loop["storage"]}<i>GB</i></td>
             <td>{$loop["price"]}<i>円 </i></td></td>
             <td>{$loop["cpu"]}</td>
             

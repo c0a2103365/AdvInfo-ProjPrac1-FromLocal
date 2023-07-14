@@ -636,3 +636,40 @@ rt, rp {
     z-index: 9998;
     display: none; /* 最初は非表示 */
   }
+
+/*---table---*/
+
+table {
+    border-collapse: separate;  /* 表の線と線の間を空ける */
+	text-align: center;         /*中央寄せ*/
+    border-spacing:  5px;       /* 表の線と線の間の幅 */
+	width: 100%;
+	border: none;
+}
+ 
+th,td {
+	text-align: center;         /*中央寄せ*/
+	border: solid 1px black;
+    padding: 5px 10px;          /* 余白指定 */
+}
+ 
+th {
+    background-color:  #185987e0; /* 背景色指定 */
+    color:  #ffffff;               /* 文字色指定 */
+    font-weight:  bold;       /* 文字の太さ指定 */
+	
+}
+ 
+td {
+    background-color:  #8ab0e84e; /* 背景色指定 */
+}
+
+
+td:nth-child(3) {
+    background-color: #ffe491b8;
+}
+/*それぞれのcss*/
+
+table.work_s td:nth-child(4) {
+    background-color: #ffe491b8;
+}

@@ -1,5 +1,19 @@
+<<<<<<< HEAD
+<html>
+<link rel="icon" href="../images/favicon.ico"> 
+<body>
+<link rel="stylesheet"  href="../css/style.css">
+<h1>仕事をする人向け</h1>
+<form action="weight_r.php" method="GET">
 {if $result}
+    <table class="work_s" border="1">
+=======
+<html> 
+<body>
+<h1>仕事したい人にお勧め</h1>
+<form action="../select/mobile_s.php" method="get">{if $result}
     <table border="1">
+>>>>>>> fd98c840ed84d1316382a619d98f863a656c92d1
         <tr>
             <th>PC_id</th>
             <th>name</th>
@@ -21,7 +35,7 @@
                 <td>{$loop["office_app"]}</td>
                 <td>{number_format($loop["battery"],1)}<i>h</i></td>
                 <td>{number_format($loop["price"])}<i>円</i></td>
-                <td>{$loop["memory"]}</td>
+                <td>{$loop["memory"]}<i>GB</i></td>
                 <td>{number_format($loop["weight"], 2)}<i>kg</i></td> 
                 <td>{number_format($loop["storage"])}<i>GB</i></td>
                 <td>{$loop["cpu"]}</td>
