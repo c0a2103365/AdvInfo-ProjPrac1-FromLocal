@@ -31,7 +31,7 @@ function reverse_val($value){
 }
 
 
-function radercart($score_1, $score_2, $score_3, $score_4, $score_5)
+function radercart($score_1, $score_2, $score_3, $score_4, $score_5,$value)
 {
     // 値
     $values = array($score_1, $score_2, $score_3, $score_4, $score_5);
@@ -113,7 +113,7 @@ function radercart($score_1, $score_2, $score_3, $score_4, $score_5)
     imagepolygon($image, $points, $count, $line);
 
     // 画像の出力
-    $output_image = 'raderchart.png'; // 出力する画像ファイル名
+    $output_image = 'raderchart.png'.$value; // 出力する画像ファイル名
     imagepng($image, $output_image);
     imagedestroy($image);
 

@@ -18,7 +18,7 @@
 			<!-- foreachを使って結果をループさせる -->
 			{foreach $result as $loop}
 			<div style="border: #28CF75 outset 6px; border-radius:20px; font-size: 100%; margin-bottom: 50px; padding: 15px; width: 450px;">
-				<input style="cursor: pointer; transform: scale(3); margin: 0 15px 0 15px;" type="checkbox" name="choice[]" value="選択"> 選択 
+				<input class="choice" style="cursor: pointer; transform: scale(3); margin: 0 15px 0 15px;" type="checkbox" name="choice[]" value="選択"> 選択 
 				<img src="{$loop["image_path"]}" style="margin: auto; display: block; padding: 15px; width: 300px;">
 				<i>製品名　：</i>
 				<i>{$loop["name"]}</i>
