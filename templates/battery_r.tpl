@@ -7,7 +7,7 @@
 {if $result}
     <table border="1">
         <tr>
-            <th>PC_id</th>
+            <th>ranking</th>
             <th>name</th>
             <th>battery</th>
             <th>price</th>
@@ -19,7 +19,6 @@
         </tr>
         {foreach $result as $loop}
         <tr>
-            
             <td>{$loop["PC_id"]}</td>
             <td>{$loop["name"]}</td>
             <td>{number_format($loop["battery"],1)}<i>h</i></td>
