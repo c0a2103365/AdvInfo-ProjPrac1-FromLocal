@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-14 07:40:46
+/* Smarty version 3.1.39, created on 2023-07-14 09:21:01
   from 'C:\xampp\htdocs\pnw\2023g01\templates\mobile_r.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64b0dfde76f340_77887283',
+  'unifunc' => 'content_64b0f75d080f03_09578642',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f22e12de872a1acbb1d6962c737950e867304215' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\mobile_r.tpl',
-      1 => 1689313244,
+      1 => 1689319205,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64b0dfde76f340_77887283 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64b0f75d080f03_09578642 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 <link rel="icon" href="../images/favicon.ico">  
 <body>
@@ -46,7 +46,7 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['loop']->value) {
 $_smarty_tpl->tpl_vars['loop']->do_else = false;
 ?>
         <tr>
-            <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["PC_id"];?>
+            <td><?php echo $_smarty_tpl->tpl_vars['i']->value;?>
 </td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["name"];?>
 </td>
@@ -63,11 +63,16 @@ $_smarty_tpl->tpl_vars['loop']->do_else = false;
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["cpu"];?>
 </td>
             
-
+      
         </tr>
+        <?php echo $_smarty_tpl->tpl_vars['i']->value++;?>
+
         <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
+        
+       
+    
     </table>
 <?php } else { ?>
     "sippai"
