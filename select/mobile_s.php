@@ -32,11 +32,11 @@ for($i=0;$i<9;$i++){
     }
 }
 
-echo "価格の例です:".$price_array[1]."<br>";
-echo "稼働時間の例です:".$battery_array[1] . "<br>";
-echo "メモリの例です:".$memory_array[1] . "<br>";
-echo "重さの例です:" . $weight_array[1] . "<br>";
-echo "不揮発性容量の例です:" . $storage_array[1] . "<br>";
+// echo "価格の例です:".$price_array[1]."<br>";
+// echo "稼働時間の例です:".$battery_array[1] . "<br>";
+// echo "メモリの例です:".$memory_array[1] . "<br>";
+// echo "重さの例です:" . $weight_array[1] . "<br>";
+// echo "不揮発性容量の例です:" . $storage_array[1] . "<br>";
 
 $price_dev_val_array= [];
 $battery_dev_val_array = [];
