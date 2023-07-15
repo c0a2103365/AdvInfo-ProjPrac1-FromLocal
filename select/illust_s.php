@@ -1,10 +1,8 @@
 <link rel="stylesheet" media="all" href="../css/style.css">
-<?php 
+<?php
 require("../libDB.php");
 require ("../rader_function.php");
-
-// $raderchart_image = radercart(70, 50, 60, 70, 40);
-// echo '<img src="' . $raderchart_image . '" alt="Radar Chart">';
+require("fileop.php");
 
 $db = new libDB();
 $pdo = $db->getPDO();
@@ -15,13 +13,6 @@ require_once("../pnwsmarty.php");
 $pnw = new pnwsmarty();
 $smarty = $pnw->getTpl();
 $smarty->assign("result",$result);
-$smarty->display("../templates/illust_s.tpl");
-
-// foreach ($result as $row) {
-//     $result_str = implode(", ", $row); // 各行の要素をカンマ区切りの文字列に変換
-//     echo $result_str . "<br>"; // 変換された文字列を出力し、改行する
-// }
-echo "-------<br>";
 
 // 各配列の定義
 $price_array=[];
@@ -30,7 +21,8 @@ $memory_array=[];
 $weight_array=[];
 $storage_array=[];
 
-for($i=0;$i<9;$i++){
+
+for($i=0;$i<8;$i++){
     if (isset($result[$i][7]) or isset($result[$i][10]) 
     or isset($result[$i][5]) or isset($result[$i][4]) or isset($result[$i][6])){
         array_push($price_array, $result[$i][7]);
@@ -41,11 +33,11 @@ for($i=0;$i<9;$i++){
     }
 }
 
-echo "価格の例です:".$price_array[1]."<br>";
-echo "稼働時間の例です:".$battery_array[1] . "<br>";
-echo "メモリの例です:".$memory_array[1] . "<br>";
-echo "重さの例です:" . $weight_array[1] . "<br>";
-echo "不揮発性容量の例です:" . $storage_array[1] . "<br>";
+// echo "価格の例です:".$price_array[1]."<br>";
+// echo "稼働時間の例です:".$battery_array[1] . "<br>";
+// echo "メモリの例です:".$memory_array[1] . "<br>";
+// echo "重さの例です:" . $weight_array[1] . "<br>";
+// echo "不揮発性容量の例です:" . $storage_array[1] . "<br>";
 
 $price_dev_val_array= [];
 $battery_dev_val_array = [];
@@ -61,12 +53,9 @@ for($i=0;$i<8;$i++){
     array_push($storage_dev_val_array, (int)reverse_val(dev_val($storage_array[$i], average($storage_array), std_dev(dispersion($storage_array)))));
 }
 
-// radercart(50,60,70,40,50);
-// echo $price_dev_val_array[7];
-foreach ($price_dev_val_array as $row) {
-    $result_str = implode(", ", array_map('intval', (array)$row)); // 各行の要素をカンマ区切りの文字列に変換
-    echo $result_str . "<br>"; // 変換された文字列を出力し、改行する
-}
+delete_file();
+
+$picture_array=[];
 
 for($i=0;$i<8;$i++){
     $raderchart_image = radercart(
@@ -76,9 +65,11 @@ for($i=0;$i<8;$i++){
         $memory_dev_val_array[$i],
         $storage_dev_val_array[$i],
         $i);
-    echo '<img src="' . $raderchart_image. '" alt="Radar Chart">';
+    $picture='<img src="' . $raderchart_image. '" alt="Radar Chart">';
+    array_push($picture_array,$picture);
+    // echo $picture;
 }
 
-
-
+$smarty->assign("picture_array", $picture_array);
+$smarty->display("../templates/illust_s.tpl");
 ?>
