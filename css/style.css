@@ -673,3 +673,10 @@ td:nth-child(3) {
 table.work_s td:nth-child(4) {
     background-color: #ffe491b8;
 }
+
+
+/*画像調整用*/
+.picture {
+	width: 15%;
+	height: auto;
+}
