@@ -20,7 +20,7 @@ body{
 	-webkit-text-size-adjust:100%;
 	overflow-x: hidden;
 	color: #000;
-	background: #fff;
+	background: #ffffff;
 }
 
 a{
@@ -116,7 +116,7 @@ section h2{
 .col2 li{
 	display: inline-block;
 	width: 100%;
-  	margin: 20px 0 20px 0;
+  	margin: 20px 0 10px 0;
 }
 
 
@@ -257,13 +257,16 @@ section h2{
 	}
 
 	#mainnav ul{
+
+		background: rgba(255, 255, 255, 0.9);
+		border-bottom: 1px solid #d1d1d1;
 		text-align: right;
 		padding-right: 30px;
 	}
 
 	#mainnav li{
 		display: inline-block;
-		padding: 45px 10px 20px;
+		padding: 20px 10px 30px;
 		font-size: 14px;
 		font-weight: 300;
 	}
@@ -273,7 +276,7 @@ section h2{
 	}
 	
 	#mainnav.changeNav{
-		background: rgba(255,255,255,.9);
+		background: rgba(255, 255, 255, 0.9);
 		border-bottom: 1px solid #d1d1d1;
 	}
 	
@@ -353,9 +356,9 @@ section h2{
   a#menu{
   	display: inline-block;
   	position: relative;
-  	width: 40px;
-  	height: 40px;
-  	margin: 10px;
+  	width: 2%;
+  	height: 2%;
+  	margin: 2%;
 	}
 
 	#menuBtn{
@@ -474,168 +477,6 @@ section h2{
 		padding: 0 20px;
 	}
 }
-
-/* ルビ振り機能に関するスタイル */
-rt {
-    display: none;
-}
-.ruby_flag rt {
-    display: block;
-}
-
-ruby {
-	ruby-position: over;
-	ruby-position: before;
-}
-rt, rp {
-	font-size: 0;
-	opacity: 0;
-}
-.ruby_flag rt,
-.ruby_flag rp {
-	opacity: 1;
-}
-.ruby_flag rt {
-	font-size: 50%;
-}
-.ruby_flag rp {
-	font-size: 1em;
-}
-
-/* === ボタンを表示するエリア ============================== */
-.switchArea {
-    line-height    : 60px;                /* 1行の高さ          */
-    letter-spacing : 0;                   /* 文字間             */
-    text-align     : center;              /* 文字位置は中央     */
-    font-size      : 27px;                /* 文字サイズ         */
-  
-    position       : relative;            /* 親要素が基点       */
-    width          : 150px;               /* ボタンの横幅       */
-    background     : #fff;                /* デフォルト背景色   */
-  }
-  
-   /* === チェックボックス ==================================== */
-  .switchArea input[type="checkbox"] {
-    display        : none;            /* チェックボックス非表示 */
-  }
-  
-   /* === チェックボックスのラベル（標準） ==================== */
-  .switchArea label {
-    display        : block;               /* ボックス要素に変更 */
-    box-sizing     : border-box;          /* 枠線を含んだサイズ */
-    height         : 60px;                /* ボタンの高さ       */
-    border         : 2px solid #999999;   /* 未選択タブのの枠線 */
-    border-radius  : 30px;                /* 角丸               */
-  }
-  
-   /* === チェックボックスのラベル（ONのとき） ================ */
-  .switchArea input[type="checkbox"]:checked +label {
-    border-color   : #78bd78;             /* 選択タブの枠線     */
-  }
-  
-   /* === 表示する文字（標準） ================================ */
-  .switchArea label span:after{
-    content        : "OFF";               /* 表示する文字       */
-    padding        : 0 0 0 36px;          /* 表示する位置       */
-    color          : #999999;             /* 文字色             */
-  }
-  
-   /* === 表示する文字（ONのとき） ============================ */
-  .switchArea  input[type="checkbox"]:checked + label span:after{
-    content        : "ON";                /* 表示する文字       */
-    padding        : 0 36px 0 0;          /* 表示する位置       */
-    color          : #78bd78;             /* 文字色             */
-  }
-  
-   /* === 丸部分のSTYLE（標準） =============================== */
-  .switchArea #swImg {
-    position       : absolute;            /* 親要素からの相対位置*/
-    width          : 52px;                /* 丸の横幅           */
-    height         : 52px;                /* 丸の高さ           */
-    background     : #999999;             /* カーソルタブの背景 */
-    top            : 4px;                 /* 親要素からの位置   */
-    left           : 4px;                 /* 親要素からの位置   */
-    border-radius  : 26px;                /* 角丸               */
-    transition     : .2s;                 /* 滑らか変化         */
-  }
-  
-   /* === 丸部分のSTYLE（ONのとき） =========================== */
-  .switchArea input[type="checkbox"]:checked ~ #swImg {
-    transform      : translateX(90px);    /* 丸も右へ移動       */
-    background     : #78bd78;             /* カーソルタブの背景 */
-  }
-
-  input[type="checkbox"] ~ span::after {
-    content: attr(data-off);
-  }
-
-  input[type="checkbox"]:checked ~ span::after {
-    content: attr(data-on);
-  }
-
-
-
-  /* 検索ページに関連するスタイル */
-  .heart {
-    width: 30%;
-  }
-
-  .on{
-    fill: red;
-  }
-  .off{
-    fill: rgb(209, 209, 209);
-  }
-
-  .search_box {
-    display: inline-block; /* なくても大丈夫だけど、念の為 */
-    position: relative;    /* 基準値とする */
-  }
-  
-  .search_box::before {
-    content: "";           /* 疑似要素に必須 */
-    width: 25px;           /* アイコンの横幅 */
-    height: 25px;          /* アイコンの高さ */
-    background: url(images/serch.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
-    display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
-    position: absolute;    /* 相対位置に指定 */
-    top: 20px;              /* アイコンの位置 */
-    left: 16px;             /* アイコンの位置 */
-  }
-  
-  .search_box input {
-    font-size: 20px;
-    padding: 20px 80px 20px 2.7em; /* アイコンを設置するため左の余白を多めに指定*/
-  }  
-
-  /* ポップアップのスタイル */
-  .popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 15%;
-    width: 60%;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 9999;
-    display: none; /* 最初は非表示 */
-    overflow-y: auto; /* 垂直方向のスクロールバーを表示 */
-    max-height: 80vh; /* ポップアップの高さが画面の80%を超えた場合にスクロールバーを表示 */
-  }
-
-  /* オーバーレイのスタイル */
-  .overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* 半透明の背景色 */
-    z-index: 9998;
-    display: none; /* 最初は非表示 */
-  }
 
 /*---table---*/
 

@@ -1,15 +1,18 @@
 <?php
+/* Smarty version 3.1.39, created on 2023-07-14 09:44:19
+  from 'C:\xampp\htdocs\pnw\2023g01\templates\battery_r.tpl' */
+
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64b0cdd2ee8e72_97597086',
+  'unifunc' => 'content_64b0fcd3c7ac44_78787261',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '33f80e723b619b7d785e21a147dee987ba8e7a26' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\battery_r.tpl',
-      1 => 1689308377,
+      1 => 1689320295,
       2 => 'file',
     ),
   ),
@@ -17,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64b0cdd2ee8e72_97597086 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64b0fcd3c7ac44_78787261 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
-    <link rel="icon" href="../images/favicon.ico">  
+<link rel="icon" href="../images/favicon.ico">   
 <body>
     <link rel="stylesheet"  href="../css/style.css">
 <h1>稼働時間ランキング</h1>
@@ -28,7 +31,6 @@ function content_64b0cdd2ee8e72_97597086 (Smarty_Internal_Template $_smarty_tpl)
     <table border="1">
         <tr>
             <th>ranking</th>
-            <th>PC_id</th>
             <th>name</th>
             <th>battery</th>
             <th>price</th>
@@ -45,9 +47,7 @@ if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['loop']->value) {
 $_smarty_tpl->tpl_vars['loop']->do_else = false;
 ?>
         <tr>
-            <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["PC_id"];?>
-</td>
-            <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["PC_id"];?>
+            <td><?php echo $_smarty_tpl->tpl_vars['i']->value;?>
 </td>
             <td><?php echo $_smarty_tpl->tpl_vars['loop']->value["name"];?>
 </td>
@@ -65,6 +65,8 @@ $_smarty_tpl->tpl_vars['loop']->do_else = false;
 </td>
 
         </tr>
+        <?php echo $_smarty_tpl->tpl_vars['i']->value++;?>
+
         <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>

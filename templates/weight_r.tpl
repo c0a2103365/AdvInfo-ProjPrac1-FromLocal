@@ -1,4 +1,5 @@
-<html> 
+<html>
+<link rel="icon" href="../images/favicon.ico">  
 <body>
 <h1>重さランキング</h1>
 <form action="../ranking/weight_r.php" method="get">
@@ -16,8 +17,7 @@
         </tr>
         {foreach $result as $loop}
         <tr>
-            
-            <td>{$loop["PC_id"]}</td>
+            <td>{$i}</td>
             <td>{$loop["name"]}</td>
             <td>{number_format($loop["weight"], 2)}<i>kg</i></td> 
             <td>{number_format($loop["battery"],1)}<i>h</i></td>
@@ -28,6 +28,7 @@
             
 
         </tr>
+        {$i++}
         {/foreach}
     </table>
 {else}
