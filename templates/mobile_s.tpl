@@ -29,6 +29,10 @@
         </tr>
         {/foreach}
     </table>
+
+    {foreach $picture_array as $picture}
+        <div class="picture">{$picture}</div>
+    {/foreach}
 {else}
     "sippai"
 {/if}
