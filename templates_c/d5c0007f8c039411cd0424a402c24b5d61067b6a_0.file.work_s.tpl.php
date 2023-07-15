@@ -75,7 +75,19 @@ $_smarty_tpl->tpl_vars['loop']->do_else = false;
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     </table>
-<?php } else { ?>
+
+    <?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['picture_array']->value, 'picture');
+$_smarty_tpl->tpl_vars['picture']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['picture']->value) {
+$_smarty_tpl->tpl_vars['picture']->do_else = false;
+?>
+        <div class="picture"><?php echo $_smarty_tpl->tpl_vars['picture']->value;?>
+</div>
+    <?php
+}
+$_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);
+} else { ?>
     "sippai"
 <?php }?>
 
