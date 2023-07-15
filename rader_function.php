@@ -38,14 +38,14 @@ function radercart($score_1, $score_2, $score_3, $score_4, $score_5,$value)
     // ラベル
     $labels = array("価格", "重さ", "稼働時間", "メモリ", "ストレージ");
 
-    $max         = 75;    // 上限
+    $max         = 80;    // 上限
     $step        = 10;    // 目盛の間隔
     $margin      = 80;    // グラフの余白
     $text_margin = 15;    // ラベルの余白
     $size        = 300;   // サイズ（正方形）
 
     // フォント
-    $font = "migmix-1p-regular.ttf";
+    $font =__DIR__ . "/migmix-1p-regular.ttf";
     $font_size = 10;
 
     // 画像
@@ -54,7 +54,7 @@ function radercart($score_1, $score_2, $score_3, $score_4, $score_5,$value)
 
     // 色
     $bg   = imagecolorallocate($image, 255, 255, 255);    // 背景
-    $line = imagecolorallocate($image, 100, 100, 100);    // チャートの線
+    $line = imagecolorallocate($image, 255, 0, 0);    // チャートの線
     $grid = imagecolorallocate($image, 50, 50, 50);       // グリッドの色
     $font_color = imagecolorallocate($image, 0, 0, 0);
 
@@ -113,7 +113,8 @@ function radercart($score_1, $score_2, $score_3, $score_4, $score_5,$value)
     imagepolygon($image, $points, $count, $line);
 
     // 画像の出力
-    $output_image = 'raderchart.png'.$value; // 出力する画像ファイル名
+    $random = rand(1,100000);
+    $output_image = 'raderchart' . (int)$value."_".$random.'.png'; // 出力する画像ファイル名
     imagepng($image, $output_image);
     imagedestroy($image);
 

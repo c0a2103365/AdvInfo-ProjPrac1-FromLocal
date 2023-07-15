@@ -21,8 +21,8 @@
     <p class="message">{$message}</p>
     {/if}
     <form action="account.php" method="post">
-        <input type="text" name="new_user_name" placeholder="User_name" value="{$user_name}" required><br>
-        <input type="password" name="new_user_pass" placeholder="Password" required><br><br>
+        <input type="text" name="new_user_name" placeholder="New_User_Name" value="{$user_name}" required><br>
+        <input type="password" name="new_user_pass" placeholder="New_Password" required><br><br>
         <input type="submit" name="update" value="アカウント更新">
     </form>
     <!-- アカウント削除ボタンのフォーム -->

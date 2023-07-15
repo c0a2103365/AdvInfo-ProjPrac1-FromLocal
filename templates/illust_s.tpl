@@ -3,6 +3,7 @@
 <body>
 <h1>画質を求める人</h1>
 <form action="../select/_s.php" method="get">
+<link rel="stylesheet" href="css/style.css"></link>
 {if $result}
     <table border="1">
         <tr>
@@ -32,6 +33,10 @@
         </tr>
         {/foreach}
     </table>
+    
+    {foreach $picture_array as $picture}
+        <div class="picture">{$picture}</div>
+    {/foreach}
 {else}
     "sippai"
 {/if}

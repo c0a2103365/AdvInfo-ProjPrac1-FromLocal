@@ -18,7 +18,6 @@
         {foreach $result as $loop}
         <tr>
             <td>{$i}</td>
-            <td>{$loop["PC_id"]}</td>
             <td>{$loop["name"]}</td>
             <td>{number_format($loop["weight"], 2)}<i>kg</i></td> 
             <td>{number_format($loop["battery"],1)}<i>h</i></td>
