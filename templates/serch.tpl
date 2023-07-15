@@ -23,6 +23,7 @@
 </div>
 
 <body>
+	<div class="bg_pattern Paper_v2"></div>
 	<link rel="stylesheet" href="css/serch.css">
 	<link rel="stylesheet" href="css/ruby.css">
 	{if $user_name}
@@ -31,7 +32,7 @@
 		</p>	
 	{else}
 		<p>ゲストユーザーさんです。<br>
-			<a href="login.php">ログインはこちら</a>
+			<a class="link" href="login.php">ログインはこちら</a>
 		</p>
 	{/if}
 	<div class="switchArea">
@@ -52,19 +53,19 @@
         <input type="text" name="serch_key" value="{$serch_key}" placeholder="ここにキーワード" required>
     </div>
 	{if !$serch_key or $serch_key == "ALL"}
-    	<p style="font-size: 200%;"><ruby><rb>全</rb><rp> (</rp><rt>ぜん</rt><rp>) </rp></ruby>データを<ruby><rb>表示</rb><rp> (</rp><rt>ひょうじ</rt><rp>) </rp></ruby>しています。</p>
+    	<p><ruby><rb>全</rb><rp> (</rp><rt>ぜん</rt><rp>) </rp></ruby>データを<ruby><rb>表示</rb><rp> (</rp><rt>ひょうじ</rt><rp>) </rp></ruby>しています。</p>
 	{else}
-		<p style="font-size: 200%;">キーワード'{$serch_key}'で<ruby><rb>検索</rb><rp> (</rp><rt>けんさく</rt><rp>) </rp></ruby>しています。</p>
+		<p>キーワード'{$serch_key}'で<ruby><rb>検索</rb><rp> (</rp><rt>けんさく</rt><rp>) </rp></ruby>しています。</p>
 	{/if}
     {if $result}
 		<br>
-		<p style="font-size: 200%;">{$count}<ruby><rb>件</rb><rp> (</rp><rt>けん</rt><rp>) </rp><rb>見</rb><rp> (</rp><rt>み</rt><rp>) </rp></ruby>つかりました。</p>
-		<p></p>
+		<p>{$count}<ruby><rb>件</rb><rp> (</rp><rt>けん</rt><rp>) </rp><rb>見</rb><rp> (</rp><rt>み</rt><rp>) </rp></ruby>つかりました。</p>
+		{* <p></p> *}
 		<button id="comparisonButton">比較</button>
 		<div style="display: flex; flex-wrap: wrap; justify-content: safe top; align-items: top;">
 			<!-- foreachを使って結果をループさせる -->
 			{foreach $result as $loop}
-			<div style="margin: 30px; border: #28CF75 outset 6px; border-radius:20px; font-size: 150%; margin-bottom: 50px; padding: 20px; width: 500px;">
+			<div style="margin: 30px; border: #6cb4e4 outset 6px; border-radius:20px; font-size: 150%; margin-bottom: 50px; padding: 20px; width: 500px;">
 				<div class="item"></div>
 					<input class="choice" style="cursor: pointer; transform: scale(3); margin: 0 15px 0 15px;" type="checkbox" class="check-box" name="choice[]" value="item{$loop["PC_id"]}"> <ruby><rb>選択</rb><rp> (</rp><rt>せんたく</rt><rp>) </rp></ruby></input>
 					<img src="{$loop["image_path"]}" style="margin: auto; display: block; padding: 15px; width: 300px;">
@@ -81,7 +82,7 @@
 							</svg>
 						</div>
 					</div>
-					<p></p>
+					{* <p></p> *}
 					<i><ruby><rb>製品名</rb><rp> (</rp><rt>せいひんめい</rt><rp>) </rp></ruby>　：</i>
 					<i>{$loop["name"]}</i>
 					<br>
@@ -108,7 +109,7 @@
     {else}
     	<br>
     	<br>
-		<p style="font-size: 200%;"><ruby><rb>検索結</rb><rp> (</rp><rt>けんさくけっ</rt><rp>) </rp><rb>果</rb><rp> (</rp><rt>か</rt><rp>) </rp></ruby>が<ruby><rb>見</rb><rp> (</rp><rt>み</rt><rp>) </rp></ruby>つかりませんでした。</p>
+		<p><ruby><rb>検索結</rb><rp> (</rp><rt>けんさくけっ</rt><rp>) </rp><rb>果</rb><rp> (</rp><rt>か</rt><rp>) </rp></ruby>が<ruby><rb>見</rb><rp> (</rp><rt>み</rt><rp>) </rp></ruby>つかりませんでした。</p>
     {/if}
 </body>
 <script src="js/main.js"></script>

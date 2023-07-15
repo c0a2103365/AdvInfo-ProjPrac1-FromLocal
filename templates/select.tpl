@@ -5,6 +5,8 @@
 <link rel="stylesheet"  href="../css/style2.css">
 <form action="../select/select.php" method="GET">
 </form>
+<div class="bg_pattern Paper_v2"></div>
+
 <ul>
     <h2>用途ページ</h2>
     <li><a class="link" href= "../select/illust_s.php"," >イラスト目的で使いたい人</a></li>
