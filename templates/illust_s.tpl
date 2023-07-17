@@ -1,9 +1,12 @@
 <html>
 <link rel="icon" href="../images/favicon.ico">  
 <body>
+
 <h1>画質を求める人</h1>
 <form action="../select/_s.php" method="get">
 <link rel="stylesheet" href="css/style.css"></link>
+<link rel="stylesheet" media="all" href="../css/style2.css">
+
 {if $result}
     <table border="1">
         <tr>
