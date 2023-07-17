@@ -5,21 +5,19 @@
 </head>
 
 <!-- ポップアップの内容を表示 -->
-<div class="overlay"> <!-- オーバーレイ -->
-<div class="popup">
-	<!-- ポップアップの内容 -->
-	<h2>ポップアップのタイトル</h2>
-	<p>ポップアップの本文</p>
-	<!-- foreachを使って結果をループさせる -->
-	{foreach $pcData as $pc}
-	<div class="item">
-		<div class="item-info">{$pc}</div>
-		<div class="item-description">{$pc}</div>
-		<input class="choice" type="checkbox" name="choice[]" value="{$pc.id}">
+<div class="overlay">
+	<div class="popup">
+		<!-- ポップアップの内容 -->
+		<h2>製品を選んで比較</h2>
+		<!-- foreachを使って結果をループさせる -->
+		{foreach $items as $item}
+		<div style="margin: 30px; border: #6cb4e4 outset 6px; border-radius:20px; font-size: 150%; margin-bottom: 50px; padding: 20px; width: 500px;">
+			<p>製品名：{$item.name}</p>
+			<p>重さ：{$item.weight}</p>
+		</div>
+		{/foreach}
+		<button id="closeButton">閉じる</button>
 	</div>
-{/foreach}
-	<button id="closeButton">閉じる</button>
-</div>
 </div>
 
 <body>
@@ -61,15 +59,15 @@
 		<br>
 		<p>{$count}<ruby><rb>件</rb><rp> (</rp><rt>けん</rt><rp>) </rp><rb>見</rb><rp> (</rp><rt>み</rt><rp>) </rp></ruby>つかりました。</p>
 		{* <p></p> *}
-		<button id="comparisonButton">比較</button>
+		<label id="comparison"><input type="checkbox" id="comparisonButton"><span><ruby><rb>比較</rb><rp> (</rp><rt>ひかく</rt><rp>) </rp></ruby></span></button></label>
 		<div style="display: flex; flex-wrap: wrap; justify-content: safe top; align-items: top;">
 			<!-- foreachを使って結果をループさせる -->
 			{foreach $result as $loop}
 			<div style="margin: 30px; border: #6cb4e4 outset 6px; border-radius:20px; font-size: 150%; margin-bottom: 50px; padding: 20px; width: 500px;">
 				<div class="item"></div>
-					<input class="choice" style="cursor: pointer; transform: scale(3); margin: 0 15px 0 15px;" type="checkbox" class="check-box" name="choice[]" value="item{$loop["PC_id"]}"> <ruby><rb>選択</rb><rp> (</rp><rt>せんたく</rt><rp>) </rp></ruby></input>
+					<input class="choice" style="cursor: pointer; transform: scale(3); margin: 0 15px 0 15px;" type="checkbox" class="check-box" name="choice[]" value="{$loop["PC_id"]}"> <ruby><rb>選択</rb><rp> (</rp><rt>せんたく</rt><rp>) </rp></ruby></input>
 					<img src="{$loop["image_path"]}" style="margin: auto; display: block; padding: 15px; width: 300px;">
-					<div class="heart">
+					<div class="hearts">
 						<div type="checkbox" class="heart" checked id="{$loop["PC_id"]}">
 							<svg id="heart{$loop["PC_id"]}" class="off" version="1.1" id="_x32_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" opacity: 1;" xml:space="preserve">
 								<g>

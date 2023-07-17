@@ -53,7 +53,6 @@ if (isset($_GET["choice"])) {
         $stmt->bindParam(':id', $selectedItem);
         $stmt->execute();
         $item = $stmt->fetch(PDO::FETCH_ASSOC);
-        var_dump($item);
 
         // 取得したアイテムの情報を配列に格納
         if ($item) {

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-17 02:47:48
+/* Smarty version 3.1.39, created on 2023-07-17 10:04:54
   from 'C:\xampp\htdocs\AdvInfo-ProjPrac1-FromLocal\templates\serch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64b48fb4586f77_55760944',
+  'unifunc' => 'content_64b4f626e6b3f6_17547388',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c0124ee4f6e47b676a71d87e5671aa143a066955' => 
     array (
       0 => 'C:\\xampp\\htdocs\\AdvInfo-ProjPrac1-FromLocal\\templates\\serch.tpl',
-      1 => 1689554780,
+      1 => 1689581093,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64b48fb4586f77_55760944 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64b4f626e6b3f6_17547388 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 
 <head>
@@ -28,31 +28,28 @@ function content_64b48fb4586f77_55760944 (Smarty_Internal_Template $_smarty_tpl)
 </head>
 
 <!-- ポップアップの内容を表示 -->
-<div class="overlay"> <!-- オーバーレイ -->
-<div class="popup">
-	<!-- ポップアップの内容 -->
-	<h2>ポップアップのタイトル</h2>
-	<p>ポップアップの本文</p>
-	<!-- foreachを使って結果をループさせる -->
-	<?php
-$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['pcData']->value, 'pc');
-$_smarty_tpl->tpl_vars['pc']->do_else = true;
-if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['pc']->value) {
-$_smarty_tpl->tpl_vars['pc']->do_else = false;
+<div class="overlay">
+	<div class="popup">
+		<!-- ポップアップの内容 -->
+		<h2>製品を選んで比較</h2>
+		<!-- foreachを使って結果をループさせる -->
+		<?php
+$_from = $_smarty_tpl->smarty->ext->_foreach->init($_smarty_tpl, $_smarty_tpl->tpl_vars['items']->value, 'item');
+$_smarty_tpl->tpl_vars['item']->do_else = true;
+if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
+$_smarty_tpl->tpl_vars['item']->do_else = false;
 ?>
-	<div class="item">
-		<div class="item-info"><?php echo $_smarty_tpl->tpl_vars['pc']->value;?>
-</div>
-		<div class="item-description"><?php echo $_smarty_tpl->tpl_vars['pc']->value;?>
-</div>
-		<input class="choice" type="checkbox" name="choice[]" value="<?php echo $_smarty_tpl->tpl_vars['pc']->value['id'];?>
-">
-	</div>
-<?php
+		<div style="margin: 30px; border: #6cb4e4 outset 6px; border-radius:20px; font-size: 150%; margin-bottom: 50px; padding: 20px; width: 500px;">
+			<p>製品名：<?php echo $_smarty_tpl->tpl_vars['item']->value['name'];?>
+</p>
+			<p>重さ：<?php echo $_smarty_tpl->tpl_vars['item']->value['weight'];?>
+</p>
+		</div>
+		<?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
-	<button id="closeButton">閉じる</button>
-</div>
+		<button id="closeButton">閉じる</button>
+	</div>
 </div>
 
 <body>
@@ -99,7 +96,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 		<br>
 		<p><?php echo $_smarty_tpl->tpl_vars['count']->value;?>
 <ruby><rb>件</rb><rp> (</rp><rt>けん</rt><rp>) </rp><rb>見</rb><rp> (</rp><rt>み</rt><rp>) </rp></ruby>つかりました。</p>
-				<button id="comparisonButton">比較</button>
+				<label id="comparison"><input type="checkbox" id="comparisonButton"><span><ruby><rb>比較</rb><rp> (</rp><rt>ひかく</rt><rp>) </rp></ruby></span></button></label>
 		<div style="display: flex; flex-wrap: wrap; justify-content: safe top; align-items: top;">
 			<!-- foreachを使って結果をループさせる -->
 			<?php
@@ -110,11 +107,11 @@ $_smarty_tpl->tpl_vars['loop']->do_else = false;
 ?>
 			<div style="margin: 30px; border: #6cb4e4 outset 6px; border-radius:20px; font-size: 150%; margin-bottom: 50px; padding: 20px; width: 500px;">
 				<div class="item"></div>
-					<input class="choice" style="cursor: pointer; transform: scale(3); margin: 0 15px 0 15px;" type="checkbox" class="check-box" name="choice[]" value="item<?php echo $_smarty_tpl->tpl_vars['loop']->value["PC_id"];?>
+					<input class="choice" style="cursor: pointer; transform: scale(3); margin: 0 15px 0 15px;" type="checkbox" class="check-box" name="choice[]" value="<?php echo $_smarty_tpl->tpl_vars['loop']->value["PC_id"];?>
 "> <ruby><rb>選択</rb><rp> (</rp><rt>せんたく</rt><rp>) </rp></ruby></input>
 					<img src="<?php echo $_smarty_tpl->tpl_vars['loop']->value["image_path"];?>
 " style="margin: auto; display: block; padding: 15px; width: 300px;">
-					<div class="heart">
+					<div class="hearts">
 						<div type="checkbox" class="heart" checked id="<?php echo $_smarty_tpl->tpl_vars['loop']->value["PC_id"];?>
 ">
 							<svg id="heart<?php echo $_smarty_tpl->tpl_vars['loop']->value["PC_id"];?>

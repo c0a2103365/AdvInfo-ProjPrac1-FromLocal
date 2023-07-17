@@ -1,5 +1,7 @@
   .heart {
-    width: 30%;
+    cursor: pointer; /* カーソルを手に変化 */
+    width: 10%;
+    height: auto;
   }
 
   .on{
@@ -10,19 +12,19 @@
   }
 
   .search_box {
-    display: inline-block; /* なくても大丈夫だけど、念の為 */
-    position: relative;    /* 基準値とする */
+    display: inline-block;
+    position: relative;
   }
   
   .search_box::before {
-    content: "";           /* 疑似要素に必須 */
-    width: 25px;           /* アイコンの横幅 */
-    height: 25px;          /* アイコンの高さ */
+    content: "";
+    width: 25px;
+    height: 25px;
     background: url(../images/serch.png) no-repeat center center / auto 100%; /* 背景にアイコン画像を配置 */
-    display: inline-block; /* 高さを持たせるためにインラインブロック要素にする */
+    display: inline-block; /* インラインブロック要素にする */
     position: absolute;    /* 相対位置に指定 */
-    top: 20px;              /* アイコンの位置 */
-    left: 16px;             /* アイコンの位置 */
+    top: 20px;
+    left: 16px;
   }
   
   .search_box input {
@@ -113,6 +115,15 @@ a {
   color: rgb(52, 72, 223);
 }
 
+#comparison input {
+  display: none; /* デフォルトのinputは非表示にする */
+}
 
-
-
+#comparison span {
+  cursor: pointer; /* カーソルを手に変化 */
+  color: #333; /* 文字色を黒に */
+  font-size: 14px; /* 文字サイズを14pxに */
+  border: 1px solid #333; /* 淵の線を指定 */
+  border-radius: 20px; /* 角丸を入れて、左右が丸いボタンにする */
+  padding: 5px 20px; /* 上下左右に余白をトル */
+}
