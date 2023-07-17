@@ -6,6 +6,8 @@
 </head>
 
 <body>
+  <link rel="stylesheet" href="css/serch.css">
+  <div class="bg_pattern Paper_v2"></div>
   <h1>ログインページ</h1>
   {if $message}
   <p class="message">{$message}</p>

@@ -75,5 +75,6 @@ ul li, ol li {
 }
 
 a {
+  font: 14px/1.9 'ヒラギノ角ゴ ProN W3', 'Hiragino Kaku Gothic ProN', メイリオ, Meiryo,sans-serif;
   color: rgb(0, 0, 0);
 }
