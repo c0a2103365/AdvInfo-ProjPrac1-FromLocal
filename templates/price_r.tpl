@@ -27,7 +27,7 @@
             <td>{number_format($loop["storage"])}<i>GB</i></td>
             <td>{$loop["cpu"]}</td>
         </tr>
-        {$i++}
+        <p class="count-up">{$i++}<p>
         {/foreach}
     </table>
 {else}

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-14 09:52:31
+/* Smarty version 3.1.39, created on 2023-07-17 02:47:48
   from 'C:\xampp\htdocs\AdvInfo-ProjPrac1-FromLocal\templates\serch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64b0febf397800_31028735',
+  'unifunc' => 'content_64b48fb4586f77_55760944',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c0124ee4f6e47b676a71d87e5671aa143a066955' => 
     array (
       0 => 'C:\\xampp\\htdocs\\AdvInfo-ProjPrac1-FromLocal\\templates\\serch.tpl',
-      1 => 1689321082,
+      1 => 1689554780,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64b0febf397800_31028735 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64b48fb4586f77_55760944 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 
 <head>
@@ -56,6 +56,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 </div>
 
 <body>
+	<div class="bg_pattern Paper_v2"></div>
 	<link rel="stylesheet" href="css/serch.css">
 	<link rel="stylesheet" href="css/ruby.css">
 	<?php if ($_smarty_tpl->tpl_vars['user_name']->value) {?>
@@ -65,7 +66,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 		</p>	
 	<?php } else { ?>
 		<p>ゲストユーザーさんです。<br>
-			<a href="login.php">ログインはこちら</a>
+			<a class="link" href="login.php">ログインはこちら</a>
 		</p>
 	<?php }?>
 	<div class="switchArea">
@@ -89,17 +90,16 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 " placeholder="ここにキーワード" required>
     </div>
 	<?php if (!$_smarty_tpl->tpl_vars['serch_key']->value || $_smarty_tpl->tpl_vars['serch_key']->value == "ALL") {?>
-    	<p style="font-size: 200%;"><ruby><rb>全</rb><rp> (</rp><rt>ぜん</rt><rp>) </rp></ruby>データを<ruby><rb>表示</rb><rp> (</rp><rt>ひょうじ</rt><rp>) </rp></ruby>しています。</p>
+    	<p><ruby><rb>全</rb><rp> (</rp><rt>ぜん</rt><rp>) </rp></ruby>データを<ruby><rb>表示</rb><rp> (</rp><rt>ひょうじ</rt><rp>) </rp></ruby>しています。</p>
 	<?php } else { ?>
-		<p style="font-size: 200%;">キーワード'<?php echo $_smarty_tpl->tpl_vars['serch_key']->value;?>
+		<p>キーワード'<?php echo $_smarty_tpl->tpl_vars['serch_key']->value;?>
 'で<ruby><rb>検索</rb><rp> (</rp><rt>けんさく</rt><rp>) </rp></ruby>しています。</p>
 	<?php }?>
     <?php if ($_smarty_tpl->tpl_vars['result']->value) {?>
 		<br>
-		<p style="font-size: 200%;"><?php echo $_smarty_tpl->tpl_vars['count']->value;?>
+		<p><?php echo $_smarty_tpl->tpl_vars['count']->value;?>
 <ruby><rb>件</rb><rp> (</rp><rt>けん</rt><rp>) </rp><rb>見</rb><rp> (</rp><rt>み</rt><rp>) </rp></ruby>つかりました。</p>
-		<p></p>
-		<button id="comparisonButton">比較</button>
+				<button id="comparisonButton">比較</button>
 		<div style="display: flex; flex-wrap: wrap; justify-content: safe top; align-items: top;">
 			<!-- foreachを使って結果をループさせる -->
 			<?php
@@ -108,7 +108,7 @@ $_smarty_tpl->tpl_vars['loop']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['loop']->value) {
 $_smarty_tpl->tpl_vars['loop']->do_else = false;
 ?>
-			<div style="margin: 30px; border: #28CF75 outset 6px; border-radius:20px; font-size: 150%; margin-bottom: 50px; padding: 20px; width: 500px;">
+			<div style="margin: 30px; border: #6cb4e4 outset 6px; border-radius:20px; font-size: 150%; margin-bottom: 50px; padding: 20px; width: 500px;">
 				<div class="item"></div>
 					<input class="choice" style="cursor: pointer; transform: scale(3); margin: 0 15px 0 15px;" type="checkbox" class="check-box" name="choice[]" value="item<?php echo $_smarty_tpl->tpl_vars['loop']->value["PC_id"];?>
 "> <ruby><rb>選択</rb><rp> (</rp><rt>せんたく</rt><rp>) </rp></ruby></input>
@@ -129,8 +129,7 @@ $_smarty_tpl->tpl_vars['loop']->do_else = false;
 							</svg>
 						</div>
 					</div>
-					<p></p>
-					<i><ruby><rb>製品名</rb><rp> (</rp><rt>せいひんめい</rt><rp>) </rp></ruby>　：</i>
+										<i><ruby><rb>製品名</rb><rp> (</rp><rt>せいひんめい</rt><rp>) </rp></ruby>　：</i>
 					<i><?php echo $_smarty_tpl->tpl_vars['loop']->value["name"];?>
 </i>
 					<br>
@@ -164,7 +163,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     <?php } else { ?>
     	<br>
     	<br>
-		<p style="font-size: 200%;"><ruby><rb>検索結</rb><rp> (</rp><rt>けんさくけっ</rt><rp>) </rp><rb>果</rb><rp> (</rp><rt>か</rt><rp>) </rp></ruby>が<ruby><rb>見</rb><rp> (</rp><rt>み</rt><rp>) </rp></ruby>つかりませんでした。</p>
+		<p><ruby><rb>検索結</rb><rp> (</rp><rt>けんさくけっ</rt><rp>) </rp><rb>果</rb><rp> (</rp><rt>か</rt><rp>) </rp></ruby>が<ruby><rb>見</rb><rp> (</rp><rt>み</rt><rp>) </rp></ruby>つかりませんでした。</p>
     <?php }?>
 </body>
 <?php echo '<script'; ?>

@@ -29,7 +29,7 @@
             <td>{$loop["cpu"]}</td>
 
         </tr>
-        {$i++}
+        <p class="count-up">{$i++}<p>
         {/foreach}
     </table>
 {else}
