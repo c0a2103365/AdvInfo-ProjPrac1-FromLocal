@@ -1,3 +1,5 @@
+<link rel="stylesheet" href="css/serch.css">
+<div class="bg_pattern Paper_v2"></div>
 <h1>アカウント作成</h1>
 {if $message}
   <p class="message">{$message}</p>

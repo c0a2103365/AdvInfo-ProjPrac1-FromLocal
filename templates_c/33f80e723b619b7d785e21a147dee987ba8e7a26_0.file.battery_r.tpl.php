@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-14 09:54:30
+/* Smarty version 3.1.39, created on 2023-07-17 08:55:12
   from 'C:\xampp\htdocs\pnw\2023g01\templates\battery_r.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64b0ff36bc08e6_35870120',
+  'unifunc' => 'content_64b4e5d0e0a7b5_38504953',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '33f80e723b619b7d785e21a147dee987ba8e7a26' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\battery_r.tpl',
-      1 => 1689320717,
+      1 => 1689576908,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64b0ff36bc08e6_35870120 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64b4e5d0e0a7b5_38504953 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 <link rel="icon" href="../images/favicon.ico">   
 <body>
     <link rel="stylesheet"  href="../css/style.css">
-<h1>稼働時間ランキング</h1>
+    <link rel="stylesheet" media="all" href="../css/style2.css">
+
+    <h1>稼働時間ランキング</h1>
 <form action="../ranking/battery_r.php" method="get">
 <?php if ($_smarty_tpl->tpl_vars['result']->value) {?>
     <table border="1">
@@ -65,8 +67,8 @@ $_smarty_tpl->tpl_vars['loop']->do_else = false;
 </td>
 
         </tr>
-        <?php echo $_smarty_tpl->tpl_vars['i']->value++;?>
-
+        <p class="count-up"><?php echo $_smarty_tpl->tpl_vars['i']->value++;?>
+<p>
         <?php
 }
 $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>

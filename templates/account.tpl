@@ -6,6 +6,8 @@
 </head>
 
 <body>
+    <link rel="stylesheet" media="all" href="../css/style2.css">
+
     <h1>アカウント情報</h1>
     <table border="1">
         <tr>

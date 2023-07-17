@@ -2,6 +2,8 @@
 <link rel="icon" href="../images/favicon.ico">  
 <body>
     <link rel="stylesheet"  href="../css/style.css">
+    <link rel="stylesheet" media="all" href="../css/style2.css">
+
 <h1>データ保存量ランキング</h1>
 <form action="../ranking/mbile_r.php" method="get">
 {if $result}
