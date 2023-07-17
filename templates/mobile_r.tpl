@@ -29,7 +29,7 @@
             
       
         </tr>
-        {$i++}
+        <p class="count-up">{$i++}<p>
         {/foreach}
         
        

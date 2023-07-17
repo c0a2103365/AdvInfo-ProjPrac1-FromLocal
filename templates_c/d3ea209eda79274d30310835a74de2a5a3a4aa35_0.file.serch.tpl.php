@@ -1,30 +1,18 @@
 <?php
-<<<<<<< Updated upstream
 /* Smarty version 3.1.39, created on 2023-07-14 08:02:30
-=======
-/* Smarty version 3.1.39, created on 2023-07-14 07:43:19
->>>>>>> Stashed changes
   from 'C:\xampp\htdocs\pnw\2023g01\templates\serch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-<<<<<<< Updated upstream
   'unifunc' => 'content_64b0e4f68c1ef1_06456182',
-=======
-  'unifunc' => 'content_64b0e077089736_65553740',
->>>>>>> Stashed changes
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd3ea209eda79274d30310835a74de2a5a3a4aa35' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\serch.tpl',
-<<<<<<< Updated upstream
       1 => 1689311782,
-=======
-      1 => 1689311332,
->>>>>>> Stashed changes
       2 => 'file',
     ),
   ),
@@ -32,11 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-<<<<<<< Updated upstream
 function content_64b0e4f68c1ef1_06456182 (Smarty_Internal_Template $_smarty_tpl) {
-=======
-function content_64b0e077089736_65553740 (Smarty_Internal_Template $_smarty_tpl) {
->>>>>>> Stashed changes
 ?><html>
 
 <head>
