@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-21 06:22:22
+/* Smarty version 3.1.39, created on 2023-07-21 07:40:05
   from 'C:\xampp\htdocs\AdvInfo-ProjPrac1-FromLocal\templates\serch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64ba07fe7e2d53_05576688',
+  'unifunc' => 'content_64ba1a358b1ef0_73558951',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c0124ee4f6e47b676a71d87e5671aa143a066955' => 
     array (
       0 => 'C:\\xampp\\htdocs\\AdvInfo-ProjPrac1-FromLocal\\templates\\serch.tpl',
-      1 => 1689913269,
+      1 => 1689918002,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64ba07fe7e2d53_05576688 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64ba1a358b1ef0_73558951 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 
 <head>
@@ -46,9 +46,11 @@ $_smarty_tpl->tpl_vars['item']->do_else = false;
 				<p><ruby><rb>製造会社</rb><rp> (</rp><rt>せいぞうがいしゃ</rt><rp>) </rp></ruby>：<?php echo $_smarty_tpl->tpl_vars['item']->value['maker'];?>
 </p>
 				<p><ruby><rb>稼</rb><rp> (</rp><rt>か</rt><rp>) </rp><rb>働</rb><rp> (</rp><rt>どう</rt><rp>) </rp><rb>時</rb><rp> (</rp><rt>じ</rt><rp>) </rp><rb>間</rb><rp> (</rp><rt>かん</rt><rp>) </rp></ruby>：<?php echo $_smarty_tpl->tpl_vars['item']->value['battery'];?>
-</p>
-				<p>重さ：<?php echo $_smarty_tpl->tpl_vars['item']->value['weight'];?>
-</p>
+h</p>
+				<p><ruby><rb>重</rb><rp> (</rp><rt>おも</rt><rp>) </rp></ruby>さ：<?php echo $_smarty_tpl->tpl_vars['item']->value['weight'];?>
+kg</p>
+				<p><ruby><rb>価</rb><rp> (</rp><rt>か</rt><rp>) </rp><rb>格</rb><rp> (</rp><rt>かく</rt><rp>) </rp></ruby>：<?php echo number_format($_smarty_tpl->tpl_vars['item']->value['price']);?>
+円</p>
 			</div>
 		</div>
 		<?php
