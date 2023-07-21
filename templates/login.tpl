@@ -17,4 +17,5 @@
     <input type="password" name="user_pass" placeholder="パスワード" required><br>
     <input type="submit" name="login" value="ログイン"><br>
   </form>
-  <a href="sign_up.php">アカウントをお持ちでない方はこちら<a></a>
+  <a href="sign_up.php">アカウントをお持ちでない方はこちら<a></a><br>
+  <button type="button" onclick="history.back()">戻る</button>

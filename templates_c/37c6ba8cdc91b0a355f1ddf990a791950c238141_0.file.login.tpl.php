@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-17 08:33:21
+/* Smarty version 3.1.39, created on 2023-07-21 06:56:26
   from 'C:\xampp\htdocs\pnw\2023g01\templates\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64b4e0b1bb2ea0_11100181',
+  'unifunc' => 'content_64ba0ffa4c3264_88597378',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '37c6ba8cdc91b0a355f1ddf990a791950c238141' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\login.tpl',
-      1 => 1689575594,
+      1 => 1689915382,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64b4e0b1bb2ea0_11100181 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64ba0ffa4c3264_88597378 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 
 <head>
@@ -41,5 +41,6 @@ function content_64b4e0b1bb2ea0_11100181 (Smarty_Internal_Template $_smarty_tpl)
     <input type="password" name="user_pass" placeholder="パスワード" required><br>
     <input type="submit" name="login" value="ログイン"><br>
   </form>
-  <a href="sign_up.php">アカウントをお持ちでない方はこちら<a></a><?php }
+  <a href="sign_up.php">アカウントをお持ちでない方はこちら<a></a><br>
+  <button type="button" onclick="history.back()">戻る</button><?php }
 }

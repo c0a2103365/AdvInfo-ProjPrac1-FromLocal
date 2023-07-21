@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-17 08:34:19
+/* Smarty version 3.1.39, created on 2023-07-21 06:54:21
   from 'C:\xampp\htdocs\pnw\2023g01\templates\sign_up.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64b4e0ebcd70a6_58804920',
+  'unifunc' => 'content_64ba0f7d629a10_60534019',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f3e97d36829b88f15130df0f7828c21e788d2cb3' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\sign_up.tpl',
-      1 => 1689575658,
+      1 => 1689914398,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64b4e0ebcd70a6_58804920 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64ba0f7d629a10_60534019 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="css/serch.css">
 <div class="bg_pattern Paper_v2"></div>
+    <link rel="stylesheet" href="css/serch.css">
+    <link rel="stylesheet" media="all" href="../css/style2.css">
+    <div class="bg_pattern Paper_v2"></div>
 <h1>アカウント作成</h1>
 <?php if ($_smarty_tpl->tpl_vars['message']->value) {?>
   <p class="message"><?php echo $_smarty_tpl->tpl_vars['message']->value;?>

@@ -46,7 +46,9 @@
             return confirm('本当に削除しますか？');
         }
     </script>
-    <a href="serch.php">製品を検索する</a>
+    <a href="serch.php">製品を検索する</a><br>
+  <button type="button" onclick="history.back()">戻る</button>
+    
 </body>
 
 </html>

@@ -113,6 +113,8 @@
     	<br>
 		<p><ruby><rb>検索結</rb><rp> (</rp><rt>けんさくけっ</rt><rp>) </rp><rb>果</rb><rp> (</rp><rt>か</rt><rp>) </rp></ruby>が<ruby><rb>見</rb><rp> (</rp><rt>み</rt><rp>) </rp></ruby>つかりませんでした。</p>
     {/if}
+	<br>
+  <button type="button" onclick="history.back()">戻る</button>
 </body>
 <script src="js/main.js"></script>
 </html>
