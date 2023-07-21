@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-21 08:02:38
+/* Smarty version 3.1.39, created on 2023-07-21 08:04:09
   from 'C:\xampp\htdocs\pnw\2023g01\templates\serch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64ba1f7e8f8a34_82416090',
+  'unifunc' => 'content_64ba1fd9c8d630_28001682',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd3ea209eda79274d30310835a74de2a5a3a4aa35' => 
     array (
       0 => 'C:\\xampp\\htdocs\\pnw\\2023g01\\templates\\serch.tpl',
-      1 => 1689919357,
+      1 => 1689919447,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64ba1f7e8f8a34_82416090 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64ba1fd9c8d630_28001682 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 
 <head>
@@ -74,7 +74,7 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 			<a class="link" href="../index.html">ログインはこちら</a>
 		</p>
 	<?php }?>
-	<button type="button" href="index.html">TOP</button>
+	<a class="link" href="index.html">TOP</a>
 	<p></p>
 	<div class="switchArea">
         <input type="checkbox" id="switch1" href="javascript:void(0)" onclick="show_block();">

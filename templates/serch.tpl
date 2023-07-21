@@ -38,7 +38,7 @@
 			<a class="link" href="../index.html">ログインはこちら</a>
 		</p>
 	{/if}
-	<button type="button" href="index.html">TOP</button>
+	<a class="link" href="index.html">TOP</a>
 	<p></p>
 	<div class="switchArea">
         <input type="checkbox" id="switch1" href="javascript:void(0)" onclick="show_block();">
