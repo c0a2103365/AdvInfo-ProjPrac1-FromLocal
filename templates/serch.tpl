@@ -29,17 +29,17 @@
 	<div class="bg_pattern Paper_v2"></div>
 	<link rel="stylesheet" href="css/serch.css">
 	<link rel="stylesheet" href="css/ruby.css">
+	<a class="link" href="index.html">TOP</a>
+	<p></p>
 	{if $user_name}
 		<p>{$user_name}さんがログインしています。<br>
-			<a href="account.php">アカウント情報はこちら</a>
+			<a class="link" href="account.php">アカウント情報はこちら</a>
 		</p>	
 	{else}
 		<p>ゲストユーザーさんです。<br>
 			<a class="link" href="../index.html">ログインはこちら</a>
 		</p>
 	{/if}
-	<a class="link" href="index.html">TOP</a>
-	<p></p>
 	<div class="switchArea">
         <input type="checkbox" id="switch1" href="javascript:void(0)" onclick="show_block();">
         <label for="switch1"><span></span></label>

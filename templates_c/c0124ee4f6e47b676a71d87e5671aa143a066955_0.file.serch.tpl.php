@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-21 07:40:05
+/* Smarty version 3.1.39, created on 2023-07-21 08:06:32
   from 'C:\xampp\htdocs\AdvInfo-ProjPrac1-FromLocal\templates\serch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64ba1a358b1ef0_73558951',
+  'unifunc' => 'content_64ba2068703ce2_08530203',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c0124ee4f6e47b676a71d87e5671aa143a066955' => 
     array (
       0 => 'C:\\xampp\\htdocs\\AdvInfo-ProjPrac1-FromLocal\\templates\\serch.tpl',
-      1 => 1689918002,
+      1 => 1689919542,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64ba1a358b1ef0_73558951 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64ba2068703ce2_08530203 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 
 <head>
@@ -41,15 +41,15 @@ $_smarty_tpl->tpl_vars['item']->do_else = false;
 ?>
 		<div style="display: flex; justify-content: center; align-items: center; overflow: hidden;">
 			<div style="margin: 30px; border: #6cb4e4 outset 6px; border-radius:20px; font-size: 150%; margin-bottom: 50px; padding: 20px; width: 500px;">
-				<p><ruby><rb>製品名</rb><rp> (</rp><rt>せいひんめい</rt><rp>) </rp></ruby>：<?php echo $_smarty_tpl->tpl_vars['item']->value['name'];?>
+				<p><ruby><rb>製品名</rb><rp> (</rp><rt>せいひんめい</rt><rp>) </rp></ruby>　：<?php echo $_smarty_tpl->tpl_vars['item']->value['name'];?>
 </p>
 				<p><ruby><rb>製造会社</rb><rp> (</rp><rt>せいぞうがいしゃ</rt><rp>) </rp></ruby>：<?php echo $_smarty_tpl->tpl_vars['item']->value['maker'];?>
 </p>
 				<p><ruby><rb>稼</rb><rp> (</rp><rt>か</rt><rp>) </rp><rb>働</rb><rp> (</rp><rt>どう</rt><rp>) </rp><rb>時</rb><rp> (</rp><rt>じ</rt><rp>) </rp><rb>間</rb><rp> (</rp><rt>かん</rt><rp>) </rp></ruby>：<?php echo $_smarty_tpl->tpl_vars['item']->value['battery'];?>
 h</p>
-				<p><ruby><rb>重</rb><rp> (</rp><rt>おも</rt><rp>) </rp></ruby>さ：<?php echo $_smarty_tpl->tpl_vars['item']->value['weight'];?>
+				<p><ruby><rb>重</rb><rp> (</rp><rt>おも</rt><rp>) </rp></ruby>さ　　：<?php echo $_smarty_tpl->tpl_vars['item']->value['weight'];?>
 kg</p>
-				<p><ruby><rb>価</rb><rp> (</rp><rt>か</rt><rp>) </rp><rb>格</rb><rp> (</rp><rt>かく</rt><rp>) </rp></ruby>：<?php echo number_format($_smarty_tpl->tpl_vars['item']->value['price']);?>
+				<p><ruby><rb>価</rb><rp> (</rp><rt>か</rt><rp>) </rp><rb>格</rb><rp> (</rp><rt>かく</rt><rp>) </rp></ruby>　　：<?php echo number_format($_smarty_tpl->tpl_vars['item']->value['price']);?>
 円</p>
 			</div>
 		</div>
@@ -67,13 +67,15 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 	<?php if ($_smarty_tpl->tpl_vars['user_name']->value) {?>
 		<p><?php echo $_smarty_tpl->tpl_vars['user_name']->value;?>
 さんがログインしています。<br>
-			<a href="account.php">アカウント情報はこちら</a>
+			<a class="link" href="account.php">アカウント情報はこちら</a>
 		</p>	
 	<?php } else { ?>
 		<p>ゲストユーザーさんです。<br>
-			<a class="link" href="login.php">ログインはこちら</a>
+			<a class="link" href="../index.html">ログインはこちら</a>
 		</p>
 	<?php }?>
+	<a class="link" href="index.html">TOP</a>
+	<p></p>
 	<div class="switchArea">
         <input type="checkbox" id="switch1" href="javascript:void(0)" onclick="show_block();">
         <label for="switch1"><span></span></label>
@@ -170,6 +172,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
     	<br>
 		<p><ruby><rb>検索結</rb><rp> (</rp><rt>けんさくけっ</rt><rp>) </rp><rb>果</rb><rp> (</rp><rt>か</rt><rp>) </rp></ruby>が<ruby><rb>見</rb><rp> (</rp><rt>み</rt><rp>) </rp></ruby>つかりませんでした。</p>
     <?php }?>
+	<br>
+  <button type="button" onclick="history.back()">戻る</button>
 </body>
 <?php echo '<script'; ?>
  src="js/main.js"><?php echo '</script'; ?>
