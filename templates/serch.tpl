@@ -35,9 +35,11 @@
 		</p>	
 	{else}
 		<p>ゲストユーザーさんです。<br>
-			<a class="link" href="login.php">ログインはこちら</a>
+			<a class="link" href="../index.html">ログインはこちら</a>
 		</p>
 	{/if}
+	<button type="button" href="index.html">TOP</button>
+	<p></p>
 	<div class="switchArea">
         <input type="checkbox" id="switch1" href="javascript:void(0)" onclick="show_block();">
         <label for="switch1"><span></span></label>
