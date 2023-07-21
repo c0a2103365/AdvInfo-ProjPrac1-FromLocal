@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-17 10:04:54
+/* Smarty version 3.1.39, created on 2023-07-21 06:22:22
   from 'C:\xampp\htdocs\AdvInfo-ProjPrac1-FromLocal\templates\serch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64b4f626e6b3f6_17547388',
+  'unifunc' => 'content_64ba07fe7e2d53_05576688',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c0124ee4f6e47b676a71d87e5671aa143a066955' => 
     array (
       0 => 'C:\\xampp\\htdocs\\AdvInfo-ProjPrac1-FromLocal\\templates\\serch.tpl',
-      1 => 1689581093,
+      1 => 1689913269,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64b4f626e6b3f6_17547388 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64ba07fe7e2d53_05576688 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 
 <head>
@@ -28,7 +28,7 @@ function content_64b4f626e6b3f6_17547388 (Smarty_Internal_Template $_smarty_tpl)
 </head>
 
 <!-- ポップアップの内容を表示 -->
-<div class="overlay">
+<div class="overlay" style="display: none;">
 	<div class="popup">
 		<!-- ポップアップの内容 -->
 		<h2>製品を選んで比較</h2>
@@ -39,11 +39,17 @@ $_smarty_tpl->tpl_vars['item']->do_else = true;
 if ($_from !== null) foreach ($_from as $_smarty_tpl->tpl_vars['item']->value) {
 $_smarty_tpl->tpl_vars['item']->do_else = false;
 ?>
-		<div style="margin: 30px; border: #6cb4e4 outset 6px; border-radius:20px; font-size: 150%; margin-bottom: 50px; padding: 20px; width: 500px;">
-			<p>製品名：<?php echo $_smarty_tpl->tpl_vars['item']->value['name'];?>
+		<div style="display: flex; justify-content: center; align-items: center; overflow: hidden;">
+			<div style="margin: 30px; border: #6cb4e4 outset 6px; border-radius:20px; font-size: 150%; margin-bottom: 50px; padding: 20px; width: 500px;">
+				<p><ruby><rb>製品名</rb><rp> (</rp><rt>せいひんめい</rt><rp>) </rp></ruby>：<?php echo $_smarty_tpl->tpl_vars['item']->value['name'];?>
 </p>
-			<p>重さ：<?php echo $_smarty_tpl->tpl_vars['item']->value['weight'];?>
+				<p><ruby><rb>製造会社</rb><rp> (</rp><rt>せいぞうがいしゃ</rt><rp>) </rp></ruby>：<?php echo $_smarty_tpl->tpl_vars['item']->value['maker'];?>
 </p>
+				<p><ruby><rb>稼</rb><rp> (</rp><rt>か</rt><rp>) </rp><rb>働</rb><rp> (</rp><rt>どう</rt><rp>) </rp><rb>時</rb><rp> (</rp><rt>じ</rt><rp>) </rp><rb>間</rb><rp> (</rp><rt>かん</rt><rp>) </rp></ruby>：<?php echo $_smarty_tpl->tpl_vars['item']->value['battery'];?>
+</p>
+				<p>重さ：<?php echo $_smarty_tpl->tpl_vars['item']->value['weight'];?>
+</p>
+			</div>
 		</div>
 		<?php
 }
