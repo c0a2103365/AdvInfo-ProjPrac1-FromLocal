@@ -5,15 +5,19 @@
 </head>
 
 <!-- ポップアップの内容を表示 -->
-<div class="overlay">
+<div class="overlay" style="display: none;">
 	<div class="popup">
 		<!-- ポップアップの内容 -->
 		<h2>製品を選んで比較</h2>
 		<!-- foreachを使って結果をループさせる -->
 		{foreach $items as $item}
-		<div style="margin: 30px; border: #6cb4e4 outset 6px; border-radius:20px; font-size: 150%; margin-bottom: 50px; padding: 20px; width: 500px;">
-			<p>製品名：{$item.name}</p>
-			<p>重さ：{$item.weight}</p>
+		<div style="display: flex; justify-content: center; align-items: center; overflow: hidden;">
+			<div style="margin: 30px; border: #6cb4e4 outset 6px; border-radius:20px; font-size: 150%; margin-bottom: 50px; padding: 20px; width: 500px;">
+				<p><ruby><rb>製品名</rb><rp> (</rp><rt>せいひんめい</rt><rp>) </rp></ruby>：{$item.name}</p>
+				<p><ruby><rb>製造会社</rb><rp> (</rp><rt>せいぞうがいしゃ</rt><rp>) </rp></ruby>：{$item.maker}</p>
+				<p><ruby><rb>稼</rb><rp> (</rp><rt>か</rt><rp>) </rp><rb>働</rb><rp> (</rp><rt>どう</rt><rp>) </rp><rb>時</rb><rp> (</rp><rt>じ</rt><rp>) </rp><rb>間</rb><rp> (</rp><rt>かん</rt><rp>) </rp></ruby>：{$item.battery}</p>
+				<p>重さ：{$item.weight}</p>
+			</div>
 		</div>
 		{/foreach}
 		<button id="closeButton">閉じる</button>

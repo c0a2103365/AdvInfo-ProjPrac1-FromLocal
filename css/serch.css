@@ -39,8 +39,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #fff;
-    padding: 15%;
-    width: 60%;
+    padding: 10%;
+    width: 55%;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 9999;

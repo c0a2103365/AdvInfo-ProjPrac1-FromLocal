@@ -42,15 +42,59 @@ document.addEventListener("keydown", function(event) {
     }
 });
 
+function disableScroll() {
+    // スクロール位置を取得
+    var scrollY = window.scrollY;
+    var scrollX = window.scrollX;
+
+    // body要素にスクロール位置を固定するスタイルを適用
+    document.body.style.position = 'fixed';
+    document.body.style.top = '-' + scrollY + 'px';
+    document.body.style.left = '-' + scrollX + 'px';
+}
+
+function enableScroll() {
+    // body要素のスクロール位置固定を解除するスタイルを適用
+    document.body.style.position = '';
+    document.body.style.top = '';
+    document.body.style.left = '';
+
+    // スクロール位置を元に戻す
+    var scrollY = parseInt(document.body.style.top || '0', 10);
+    var scrollX = parseInt(document.body.style.left || '0', 10);
+    window.scrollTo(scrollX, scrollY);
+}
+
 // ポップアップの要素を取得
 var popup = document.querySelector(".popup");
 var overlay = document.querySelector(".overlay");
 
-// 閉じるボタンをクリックしたときの処理
+// ポップアップを表示する関数
+function showPopup() {
+    // オーバーレイのスタイルにoverflow: hidden;を適用
+    document.querySelector(".overlay").style.display = "block";
+    document.querySelector(".overlay").style.overflow = "hidden";
+
+    // スクロールを無効にする
+    disableScroll();
+}
+
+// ポップアップを非表示にする関数
+function hidePopup() {
+    // オーバーレイのスタイルを空にする（元のスタイルに戻る）
+    document.querySelector(".overlay").style.display = "none";
+    document.querySelector(".overlay").style.overflow = "";
+
+    // スクロールを有効にする
+    enableScroll();
+}
+
+// 閉じるボタンのクリックイベントを設定
 document.getElementById("closeButton").addEventListener("click", function() {
-    // ポップアップの非表示
-    popup.style.display = "none";
-    overlay.style.display = "none";
+    // ポップアップを非表示にする
+    document.querySelector(".popup").style.display = "none";
+    // ポップアップが閉じられたときにスクロールを有効にする
+    hidePopup();
 });
 
 // 比較ボタンをクリックしたときの処理
@@ -82,6 +126,8 @@ document.getElementById("comparisonButton").addEventListener("click", function()
                 if (popup && overlay) {
                     popup.style.display = "block";
                     overlay.style.display = "block";
+                    overlay.style.overflow = "hidden";
+                    disableScroll()
                 }
             } else {
                 console.error('エラーが発生しました');
