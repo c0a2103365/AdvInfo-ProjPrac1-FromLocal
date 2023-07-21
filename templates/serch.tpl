@@ -13,10 +13,11 @@
 		{foreach $items as $item}
 		<div style="display: flex; justify-content: center; align-items: center; overflow: hidden;">
 			<div style="margin: 30px; border: #6cb4e4 outset 6px; border-radius:20px; font-size: 150%; margin-bottom: 50px; padding: 20px; width: 500px;">
-				<p><ruby><rb>製品名</rb><rp> (</rp><rt>せいひんめい</rt><rp>) </rp></ruby>：{$item.name}</p>
+				<p><ruby><rb>製品名</rb><rp> (</rp><rt>せいひんめい</rt><rp>) </rp></ruby>　：{$item.name}</p>
 				<p><ruby><rb>製造会社</rb><rp> (</rp><rt>せいぞうがいしゃ</rt><rp>) </rp></ruby>：{$item.maker}</p>
-				<p><ruby><rb>稼</rb><rp> (</rp><rt>か</rt><rp>) </rp><rb>働</rb><rp> (</rp><rt>どう</rt><rp>) </rp><rb>時</rb><rp> (</rp><rt>じ</rt><rp>) </rp><rb>間</rb><rp> (</rp><rt>かん</rt><rp>) </rp></ruby>：{$item.battery}</p>
-				<p>重さ：{$item.weight}</p>
+				<p><ruby><rb>稼</rb><rp> (</rp><rt>か</rt><rp>) </rp><rb>働</rb><rp> (</rp><rt>どう</rt><rp>) </rp><rb>時</rb><rp> (</rp><rt>じ</rt><rp>) </rp><rb>間</rb><rp> (</rp><rt>かん</rt><rp>) </rp></ruby>：{$item.battery}h</p>
+				<p><ruby><rb>重</rb><rp> (</rp><rt>おも</rt><rp>) </rp></ruby>さ　　：{$item.weight}kg</p>
+				<p><ruby><rb>価</rb><rp> (</rp><rt>か</rt><rp>) </rp><rb>格</rb><rp> (</rp><rt>かく</rt><rp>) </rp></ruby>　　：{number_format($item.price)}円</p>
 			</div>
 		</div>
 		{/foreach}
