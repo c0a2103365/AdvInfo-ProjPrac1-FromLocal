@@ -35,7 +35,7 @@
         {/if}
         {/foreach}
     </table>
-
+<center><p>※価格と重量はデータの数値が低いほど、レーダーチャートの数値が大きくなります。</p></center>
     {foreach $picture_array as $picture}
         <div class="picture">{$picture}</div>
     {/foreach}
