@@ -37,7 +37,7 @@
 		</p>	
 	{else}
 		<p>ゲストユーザーさんです。<br>
-			<a class="link" href="../index.html">ログインはこちら</a>
+			<a class="link" href="login.html">ログインはこちら</a>
 		</p>
 	{/if}
 	<div class="switchArea">

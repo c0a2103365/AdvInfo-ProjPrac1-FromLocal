@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.39, created on 2023-07-21 08:06:32
+/* Smarty version 3.1.39, created on 2023-07-21 08:07:44
   from 'C:\xampp\htdocs\AdvInfo-ProjPrac1-FromLocal\templates\serch.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.39',
-  'unifunc' => 'content_64ba2068703ce2_08530203',
+  'unifunc' => 'content_64ba20b04368a4_89328902',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'c0124ee4f6e47b676a71d87e5671aa143a066955' => 
     array (
       0 => 'C:\\xampp\\htdocs\\AdvInfo-ProjPrac1-FromLocal\\templates\\serch.tpl',
-      1 => 1689919542,
+      1 => 1689919626,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_64ba2068703ce2_08530203 (Smarty_Internal_Template $_smarty_tpl) {
+function content_64ba20b04368a4_89328902 (Smarty_Internal_Template $_smarty_tpl) {
 ?><html>
 
 <head>
@@ -64,6 +64,8 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 	<div class="bg_pattern Paper_v2"></div>
 	<link rel="stylesheet" href="css/serch.css">
 	<link rel="stylesheet" href="css/ruby.css">
+	<a class="link" href="index.html">TOP</a>
+	<p></p>
 	<?php if ($_smarty_tpl->tpl_vars['user_name']->value) {?>
 		<p><?php echo $_smarty_tpl->tpl_vars['user_name']->value;?>
 さんがログインしています。<br>
@@ -74,8 +76,6 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 			<a class="link" href="../index.html">ログインはこちら</a>
 		</p>
 	<?php }?>
-	<a class="link" href="index.html">TOP</a>
-	<p></p>
 	<div class="switchArea">
         <input type="checkbox" id="switch1" href="javascript:void(0)" onclick="show_block();">
         <label for="switch1"><span></span></label>
